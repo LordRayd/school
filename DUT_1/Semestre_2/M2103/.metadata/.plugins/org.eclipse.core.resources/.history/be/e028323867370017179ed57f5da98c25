@@ -1,0 +1,9 @@
+package battle;
+
+public class AutoPlayer extends Player{
+
+	public AutoPlayer() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

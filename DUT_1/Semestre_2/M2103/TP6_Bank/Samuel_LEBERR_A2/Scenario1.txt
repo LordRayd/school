@@ -1,0 +1,171 @@
+
+========********** Test BankAccount **********========
+
+======== Test constructor ========
+
+Test OK
+
+Test accountNumber < 0
+Param anAccountNumber BankAccount FALSE
+
+Test overdraft > 0
+Param overdraft BankAccount FALSE
+
+======== Test getOverdraft ========
+
+Test OK
+-10.5
+
+Test overdraft > 0
+0.0
+
+======== Test setOverdraft ========
+
+Test OK
+
+Test overdraft > 0
+Param setOverdraft FALSE
+
+======== Test deposit ========
+
+Test OK
+
+Test amount < 0
+Param deposit FALSE
+
+======== Test withdraw ========
+
+Test OK
+
+Test amount < 0
+Param withdraw FALSE
+
+Test balance - amount < authorizedOverdraft
+You don't have enough money on your count
+
+======== Test transfert ========
+
+Test OK bankaccount1 -> 10 -> bankaccount2
+bankaccount1 balance : 50.5
+bankaccount2 balance : 40.5
+bankaccount1 balance : 40.5
+bankaccount2 balance : 50.5
+
+Test  amount < 0
+Param transfert FALSE
+bankaccount1 balance : 40.5
+bankaccount2 balance : 50.5
+
+Test balance - amount < authorizedOverdraft
+bankaccount1 balance : 40.5
+bankaccount2 balance : 50.5
+
+======== Test toString ========
+
+Test bankaccount1
+Your count Number : 1.0
+You have 40.5 on your count
+You can have an overdraft of : -5.0
+
+Test bankaccount2
+Your count Number : -1.0
+You have 50.5 on your count
+You can have an overdraft of : -10.5
+
+Test bankaccount3
+Your count Number : 2.0
+You have 0.0 on your count
+You can have an overdraft of : 0.0
+
+========********** Test CheckingAccount **********========
+
+======== Test constructor ========
+
+Test OK
+
+Test accountNumber < 0
+Param anAccountNumber BankAccount FALSE
+
+======== Test deposit ========
+
+Test OK
+
+Test amount < 0
+Param deposit FALSE
+
+======== Test withdraw ========
+
+Test OK
+checkingaccount1 balance : 100.5
+checkingaccount1 balance : 50.5
+
+Test amount < 0
+checkingaccount2 balance : 40.5
+Param withdraw FALSE
+checkingaccount2 balance : 40.5
+
+Test balance - amount < authorizedOverdraft
+checkingaccount2 balance : 40.5
+You don't have enough money on your count
+checkingaccount2 balance : 40.5
+
+Test transactionCount > 3. withdraw 10. withdraw 10.
+checkingaccount1 balance : 30.5
+checkingaccount1 withdraw 20
+checkingaccount1 balance : 8.5
+
+======== Test toString ========
+
+Test checkingaccount1
+Your count Number : 1.0
+You have 8.5 on your count
+You can have an overdraft of : 0.0
+You have done 4 transactions
+
+Test checkingaccount2
+Your count Number : -1.0
+You have 40.5 on your count
+You can have an overdraft of : 0.0
+You have done 0 transactions
+
+Test checkingaccount3
+Your count Number : 2.0
+You have 0.0 on your count
+You can have an overdraft of : 0.0
+You have done 0 transactions
+
+========********** Test SavingsAccount **********========
+
+======== Test constructor ========
+
+Test OK
+
+Test accountNumber < 0
+Param anAccountNumber BankAccount FALSE
+
+Test rate < 0
+Param rate SavingsAccount FALSE
+
+======== Test addInterest ========
+savingsaccount1 interestRate : 0.5
+savingsaccount1 interestRate : 0.6
+
+======== Test toString ========
+
+Test savingsaccount1
+Your count Number : 1.0
+You have 0.0 on your count
+You can have an overdraft of : 0.0
+You have 0.6 interest
+
+Test savingsaccount2
+Your count Number : -1.0
+You have 0.0 on your count
+You can have an overdraft of : 0.0
+You have 0.4 interest
+
+Test savingsaccount3
+Your count Number : 3.0
+You have 0.0 on your count
+You can have an overdraft of : 0.0
+You have 0.0 interest

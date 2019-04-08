@@ -1,0 +1,9 @@
+import battle.*;
+
+public class LaunchBattle {
+	
+	public static void main(String[] args){
+		new BattleShip("file","nom1","nom2");
+	}
+
+}

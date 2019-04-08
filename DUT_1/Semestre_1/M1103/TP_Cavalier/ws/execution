@@ -1,0 +1,105 @@
+=========================== Test de la methode afficherDamier ===============================
+
+--------- Test les cas normaux
+0      0      0      0      0      0      0      0      0      0      
+
+
+0      0      0      0      0      0      0      0      0      0      
+
+
+0      0      0      0      0      0      0      0      0      0      
+
+
+0      0      0      0      0      0      0      0      0      0      
+
+
+0      0      0      0      0      0      0      0      0      0      
+
+
+0      0      0      0      0      0      0      0      0      0      
+
+
+0      0      0      0      0      0      0      0      0      0      
+
+
+0      0      0      0      0      0      0      0      0      0      
+
+
+0      0      0      0      0      0      0      0      0      0      
+
+
+0      0      0      0      0      0      0      0      0      0      
+
+
+
+--------- Test tous les cas d'erreurs
+On ne peut pas tester les cas d'erreurs
+Car cela implique de modifier le damier
+
+
+
+=========================== Test de la methode estCeValide ===============================
+
+--------- Test tous les cas d'erreurs
+
+--- Test newX < 0
+Le nouveau X est faux
+Le résultat est false
+
+--- Test newX > TAILLE_ECHEC
+Le nouveau X est faux
+Le résultat est false
+
+--- Test newY < 0
+Le nouveau Y est faux
+Le résultat est false
+
+--- Test newY > TAILLE_ECHEC
+Le nouveau Y est faux
+Le résultat est false
+
+--- Test case[newX][newY] déja visité
+La case a deja ete visite
+Le résultat est false
+
+--------- Test tous les cas limites ------ 
+
+--- Test newX = 0
+Le nouveau Y est faux
+Le résultat est false
+
+--- Test newX = TAILLE_ECHEC-1
+Le résultat est true
+
+--- Test newY = 0
+Le résultat est true
+
+--- Test newY = TAILLE_ECHEC-1
+Le résultat est true
+
+--------- Test les cas normaux
+La case a deja ete visite
+Le résultat est false
+
+
+
+=========================== Test de la methode donnerSuivants ===============================
+
+--------- Test les cas normaux
+Pour posX = 4 et posY = 5
+2    6
+
+3    8
+
+5    8
+
+7    6
+
+7    4
+
+5    2
+
+3    2
+
+1    4
+

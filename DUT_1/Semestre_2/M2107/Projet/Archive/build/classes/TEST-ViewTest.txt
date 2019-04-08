@@ -1,0 +1,8 @@
+Testsuite: ViewTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3,006 sec
+
+Testcase: numberOfViewTest took 0,637 sec
+Testcase: verifAttributTest took 0,394 sec
+Testcase: getViewNameTest took 0,642 sec
+Testcase: numberColumnViewTest took 0,38 sec
+Testcase: getCodeTriggerTest took 0,457 sec

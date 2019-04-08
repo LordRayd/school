@@ -1,0 +1,221 @@
+import java.awt.BorderLayout;
+import java.awt.GridLayout;
+
+import javax.swing.ButtonGroup;
+import javax.swing.JCheckBox;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JRadioButton;
+import javax.swing.JTable;
+import javax.swing.JTextField;
+
+public class InformationPanel extends JPanel{
+	
+	private JTextField nomJTF;
+	private JTextField prenomJTF;
+	private JTextField dateNaissanceJTF;
+	private JTextField courrielJTF;
+	private JLabel nom;
+	private JLabel prenom;
+	private JLabel dateNaissance;
+	private JLabel courriel;
+	private JLabel redoublant;
+	private JLabel listeEval;
+	private JLabel moyenne;
+	private JRadioButton homme;
+	private JRadioButton femme;
+	private JCheckBox premiereACB;
+	private JCheckBox deuxiemeACB;
+	private JTable evaluation;
+	
+	public InformationPanel(){
+		leftPane();
+		rightPane();
+	}
+
+	private void leftPane(){
+		setLayout(new GridLayout(1,2,50,50));
+		JPanel details = new JPanel();
+		details.setLayout(new GridLayout(8,2));
+
+		nom = new JLabel("Nom ");
+		prenom = new JLabel("Prenom ");
+		dateNaissance = new JLabel("Date naissance ");
+		courriel = new JLabel("Courriel");
+		redoublant = new JLabel("Redoublant");
+		nomJTF = new JTextField();
+		prenomJTF = new JTextField();
+		dateNaissanceJTF = new JTextField();
+		courrielJTF = new JTextField();		
+		homme = new JRadioButton("H");
+		femme = new JRadioButton("F");
+		ButtonGroup group = new ButtonGroup();
+		group.add(homme);
+		group.add(femme);
+		premiereACB = new JCheckBox("1A");
+		deuxiemeACB = new JCheckBox("2A");
+		
+		details.add(nom);
+		details.add(nomJTF);
+		details.add(prenom);
+		details.add(prenomJTF);
+		details.add(dateNaissance);
+		details.add(dateNaissanceJTF);
+		details.add(courriel);
+		details.add(courrielJTF);
+		details.add(homme);
+		details.add(femme);
+		details.add(redoublant);
+		details.add(new JLabel());
+		details.add(premiereACB);
+		details.add(new JLabel());
+		details.add(deuxiemeACB);
+
+		add(details);
+	}
+
+	public void rightPane(){
+		JPanel rightPane = new JPanel();
+		rightPane.setLayout(new BorderLayout(10,30));
+		listeEval = new JLabel("Liste des Evaluations ");
+		moyenne = new JLabel("Moyenne ");
+		JPanel infoEval = new JPanel();
+		infoEval.setLayout(new GridLayout(1,2,50,50));
+		infoEval.add(listeEval);
+		infoEval.add(moyenne);
+		rightPane.add(infoEval, BorderLayout.NORTH);
+		evaluation = new JTable();
+		rightPane.add(evaluation, BorderLayout.CENTER);
+		add(rightPane);
+	}
+
+	public JTextField getNomJTF() {
+		return nomJTF;
+	}
+
+	public void setNomJTF(JTextField nomJTF) {
+		this.nomJTF = nomJTF;
+	}
+
+	public JTextField getPrenomJTF() {
+		return prenomJTF;
+	}
+
+	public void setPrenomJTF(JTextField prenomJTF) {
+		this.prenomJTF = prenomJTF;
+	}
+
+	public JTextField getDateNaissanceJTF() {
+		return dateNaissanceJTF;
+	}
+
+	public void setDateNaissanceJTF(JTextField dateNaissanceJTF) {
+		this.dateNaissanceJTF = dateNaissanceJTF;
+	}
+
+	public JTextField getCourrielJTF() {
+		return courrielJTF;
+	}
+
+	public void setCourrielJTF(JTextField courrielJTF) {
+		this.courrielJTF = courrielJTF;
+	}
+
+	public JLabel getNom() {
+		return nom;
+	}
+
+	public void setNom(JLabel nom) {
+		this.nom = nom;
+	}
+
+	public JLabel getPrenom() {
+		return prenom;
+	}
+
+	public void setPrenom(JLabel prenom) {
+		this.prenom = prenom;
+	}
+
+	public JLabel getDateNaissance() {
+		return dateNaissance;
+	}
+
+	public void setDateNaissance(JLabel dateNaissance) {
+		this.dateNaissance = dateNaissance;
+	}
+
+	public JLabel getCourriel() {
+		return courriel;
+	}
+
+	public void setCourriel(JLabel courriel) {
+		this.courriel = courriel;
+	}
+
+	public JLabel getRedoublant() {
+		return redoublant;
+	}
+
+	public void setRedoublant(JLabel redoublant) {
+		this.redoublant = redoublant;
+	}
+
+	public JLabel getListeEval() {
+		return listeEval;
+	}
+
+	public void setListeEval(JLabel listeEval) {
+		this.listeEval = listeEval;
+	}
+
+	public JLabel getMoyenne() {
+		return moyenne;
+	}
+
+	public void setMoyenne(JLabel moyenne) {
+		this.moyenne = moyenne;
+	}
+
+	public JRadioButton getHomme() {
+		return homme;
+	}
+
+	public void setHomme(JRadioButton homme) {
+		this.homme = homme;
+	}
+
+	public JRadioButton getFemme() {
+		return femme;
+	}
+
+	public void setFemme(JRadioButton femme) {
+		this.femme = femme;
+	}
+
+	public JCheckBox getPremiereACB() {
+		return premiereACB;
+	}
+
+	public void setPremiereACB(JCheckBox premiereACB) {
+		this.premiereACB = premiereACB;
+	}
+
+	public JCheckBox getDeuxiemeACB() {
+		return deuxiemeACB;
+	}
+
+	public void setDeuxiemeACB(JCheckBox deuxiemeACB) {
+		this.deuxiemeACB = deuxiemeACB;
+	}
+
+	public JTable getEvaluation() {
+		return evaluation;
+	}
+
+	public void setEvaluation(JTable evaluation) {
+		this.evaluation = evaluation;
+	}
+	
+	
+}

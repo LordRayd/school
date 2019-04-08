@@ -1,0 +1,1055 @@
+     ====== Test de la methode afficherTab ====== 
+
+   ------ Test tous les cas d'erreurs ------ 
+
+------ Test d'un tableau vide ------ 
+afficherTab Le tableau est vide
+
+------ Test quand nbElem est trop petit ------ 
+afficherTab nbElem trop petit
+
+------ Test quand nbElem est trop grand ------ 
+afficherTab nbElem trop grand
+
+   ------ Test tous les cas limites ------ 
+
+------ Test quand nbElem vaut 0 ------ 
+afficherTab nbElem egale a 0
+
+------ Test quand nbElem vaut 10 ------ 
+tab [0] = 0
+tab [1] = 1
+tab [2] = 2
+tab [3] = 3
+tab [4] = 4
+tab [5] = 5
+tab [6] = 6
+tab [7] = 7
+tab [8] = 8
+tab [9] = 9
+
+   ------ Test les cas normaux ------ 
+
+------ Test d'un cas normal ------ 
+tab [0] = 0
+tab [1] = 1
+tab [2] = 2
+tab [3] = 3
+tab [4] = 4
+
+
+     ====== Test de la methode saisir et afficherTabLgn ====== 
+
+   ------ Test tous les cas d'erreurs ------ 
+
+------ Test d'un tableau vide ------ 
+Le tableau est vide
+
+------ Test quand nbElem est trop petit ------ 
+nbElem trop petit
+
+------ Test quand nbElem est trop grand ------ 
+nbElem trop grand
+
+   ------ Test tous les cas limites ------ 
+
+------ Test quand nbElem vaut 0 ------ 
+nbElem egale a 0
+
+------ Test quand nbElem vaut 10 ------ 
+0 1 
+2 3 
+4 5 
+6 7 
+8 9 
+   ------ Test les cas normaux ------ 
+
+------ Test d'un cas normal ------ 
+0 1 
+2 3 
+4 
+
+     ====== Test de la methode tirerAleatoire ====== 
+
+   ------ Test tous les cas d'erreurs ------ 
+
+------ Test min > max ------ 
+min est plus grand que max
+-1
+
+   ------ Test tous les cas limites ------ 
+
+------ Test min = max ------ 
+11
+
+   ------ Test tous les cas normaux ------ 
+
+------ Test 1 ------ 
+11
+
+------ Test 2 ------ 
+4
+
+------ Test 3 ------ 
+9
+
+
+     ====== Test de la methode remplirAleatoire ====== 
+
+   ------ Test tous les cas d'erreurs ------ 
+
+------ Test d'un tableau vide ------ 
+Le tableau est vide
+
+------ Test quand nbElem est trop petit ------ 
+nbElem trop petit
+
+------ Test quand nbElem est trop grand ------ 
+nbElem trop grand
+
+------ Test min > max ------ 
+min est plus grand que max
+
+   ------ Test tous les cas limites ------ 
+
+------ Test quand nbElem vaut 0 ------ 
+nbElem egale a 0
+
+------ Test quand nbElem vaut 10 ------ 
+tab [0] = 7
+tab [1] = 1
+tab [2] = 6
+tab [3] = 16
+tab [4] = 16
+tab [5] = 4
+tab [6] = 16
+tab [7] = 6
+tab [8] = 0
+tab [9] = 2
+
+   ------ Test tous les cas normaux ------ 
+
+------ Test 1 ------ 
+tab [0] = 4
+tab [1] = 2
+tab [2] = 6
+tab [3] = 13
+tab [4] = 19
+tab [5] = 19
+tab [6] = 7
+tab [7] = 19
+tab [8] = 11
+tab [9] = 8
+
+------ Test 2 ------ 
+tab [0] = 6
+tab [1] = 12
+tab [2] = 9
+tab [3] = 6
+tab [4] = 1
+tab [5] = 6
+tab [6] = 1
+tab [7] = 2
+tab [8] = 4
+tab [9] = 19
+
+
+     ====== Test de la methode egalite ====== 
+
+   ------ Test tous les cas d'erreurs ------ 
+
+------ Test d'un tableau vide ------ 
+Un des deux tableaux est vide
+false
+
+------ Test quand nbElem1 est trop petit ------ 
+Les deux tableaux n'ont pas le meme nombre d'elements
+false
+
+------ Test quand nbElem1 est trop grand ------ 
+L'un des deux nbElem est trop grand
+false
+
+------ Test quand nbElem1 est different de nbElem2 ------ 
+Les deux tableaux n'ont pas le meme nombre d'elements
+false
+
+   ------ Test tous les cas limites ------ 
+
+------ Test quand nbElem vaut 0 ------ 
+Un des nbElem est egale a 0
+false
+
+------ Test quand nbElem vaut 4 ------ 
+true
+
+   ------ Test tous les cas normaux ------ 
+
+------ Test d'un cas normal ------ 
+true
+
+
+     ====== Test de la methode copier ====== 
+
+   ------ Le Tableau au debut ------ 
+tab [0] = 0
+tab [1] = 1
+tab [2] = 2
+tab [3] = 3
+tab [4] = 4
+tab [5] = 5
+tab [6] = 6
+tab [7] = 7
+tab [8] = 8
+tab [9] = 9
+
+   ------ Test tous les cas d'erreurs ------ 
+
+------ Test d'un tableau vide ------ 
+Le tableau est vide
+
+------ Test quand nbElem est trop petit ------ 
+nbElem trop petit
+
+------ Test quand nbElem est trop grand ------ 
+nbElem trop grand
+
+   ------ Test tous les cas limites ------ 
+
+------ Test quand nbElem vaut 0 ------ 
+nbElem egale a 0
+
+------ Test quand nbElem vaut 10 ------ 
+tab [0] = 0
+tab [1] = 1
+tab [2] = 2
+tab [3] = 3
+tab [4] = 4
+tab [5] = 5
+tab [6] = 6
+tab [7] = 7
+tab [8] = 8
+tab [9] = 9
+
+   ------ Test les cas normaux ------ 
+
+------ Test 1 nbElem = 5 ------ 
+tab [0] = 0
+tab [1] = 1
+tab [2] = 2
+tab [3] = 3
+tab [4] = 4
+
+------ Test 2 nbElem = 7 ------ 
+tab [0] = 0
+tab [1] = 1
+tab [2] = 2
+tab [3] = 3
+tab [4] = 4
+tab [5] = 5
+tab [6] = 6
+
+
+     ====== Test de la methode nbOccurrences ====== 
+
+   ------ Le Tableau au debut ------ 
+tab [0] = 4
+tab [1] = 1
+tab [2] = 2
+tab [3] = 3
+tab [4] = 4
+tab [5] = 5
+tab [6] = 4
+tab [7] = 5
+tab [8] = 8
+tab [9] = 9
+
+   ------ Test tous les cas d'erreurs ------ 
+
+------ Test d'un tableau vide ------ 
+Le tableau est vide
+-1
+
+------ Test quand nbElem est trop petit ------ 
+nbElem trop petit
+-1
+
+------ Test quand nbElem est trop grand ------ 
+nbElem trop grand
+-1
+
+   ------ Test tous les cas limites ------ 
+
+------ Test quand nbElem vaut 0 ------ 
+nbElem egale a 0
+-1
+
+------ Test quand nbElem vaut 10 ------ 
+1
+
+   ------ Test tous les cas normaux ------ 
+
+------ Test 1 Occurence = 2 ------ 
+2
+
+------ Test 2 Occurence = 3 ------ 
+3
+
+
+     ====== Test de la methode leMax ====== 
+
+   ------ Le Tableau au debut ------ 
+tab [0] = 4
+tab [1] = 3
+tab [2] = 2
+tab [3] = 5
+tab [4] = 8
+tab [5] = 1
+tab [6] = 4
+tab [7] = 0
+tab [8] = 15
+tab [9] = 9
+
+   ------ Test tous les cas d'erreurs ------ 
+
+------ Test d'un tableau vide ------ 
+Le tableau est vide
+-1
+
+------ Test quand nbElem est trop petit ------ 
+nbElem trop petit
+-1
+
+------ Test quand nbElem est trop grand ------ 
+nbElem trop grand
+-1
+
+   ------ Test tous les cas limites ------ 
+
+------ Test quand nbElem vaut 0 ------ 
+nbElem egale a 0
+-1
+
+------ Test quand nbElem vaut 10 ------ 
+0
+
+   ------ Test tous les cas normaux ------ 
+
+------ Test 1 Doit trouver 8 ------ 
+1
+
+------ Test 2 Doit trouver 5 ------ 
+2
+
+
+     ====== Test de la methode leMin ====== 
+
+   ------ Le Tableau au debut ------ 
+tab [0] = 4
+tab [1] = 3
+tab [2] = 2
+tab [3] = 5
+tab [4] = 8
+tab [5] = 1
+tab [6] = 4
+tab [7] = 0
+tab [8] = 15
+tab [9] = 9
+
+   ------ Test tous les cas d'erreurs ------ 
+
+------ Test d'un tableau vide ------ 
+Le tableau est vide
+-1
+
+------ Test quand nbElem est trop petit ------ 
+nbElem trop petit
+-1
+
+------ Test quand nbElem est trop grand ------ 
+nbElem trop grand
+-1
+
+   ------ Test tous les cas limites ------ 
+
+------ Test quand nbElem vaut 0 ------ 
+nbElem egale a 0
+-1
+
+------ Test quand nbElem vaut 10 ------ 
+15
+
+   ------ Test tous les cas normaux ------ 
+
+------ Test 1 Doit trouver 1 ------ 
+8
+
+------ Test 2 Doit trouver 2 ------ 
+5
+
+
+     ====== Test de la methode inverse ====== 
+
+   ------ Le Tableau au debut ------ 
+tab [0] = 0
+tab [1] = 1
+tab [2] = 2
+tab [3] = 3
+tab [4] = 4
+tab [5] = 5
+tab [6] = 6
+tab [7] = 7
+tab [8] = 8
+tab [9] = 9
+
+   ------ Test tous les cas d'erreurs ------ 
+
+------ Test d'un tableau vide ------ 
+Le tableau est vide
+afficherTab Le tableau est vide
+
+------ Test quand nbElem est trop petit ------ 
+nbElem trop petit
+tab [0] = 0
+tab [1] = 1
+tab [2] = 2
+tab [3] = 3
+tab [4] = 4
+tab [5] = 5
+tab [6] = 6
+tab [7] = 7
+tab [8] = 8
+tab [9] = 9
+
+------ Test quand nbElem est trop grand ------ 
+nbElem trop grand
+tab [0] = 0
+tab [1] = 1
+tab [2] = 2
+tab [3] = 3
+tab [4] = 4
+tab [5] = 5
+tab [6] = 6
+tab [7] = 7
+tab [8] = 8
+tab [9] = 9
+
+   ------ Test tous les cas limites ------ 
+
+------ Test quand nbElem vaut 0 ------ 
+nbElem egale a 0
+tab [0] = 0
+tab [1] = 1
+tab [2] = 2
+tab [3] = 3
+tab [4] = 4
+tab [5] = 5
+tab [6] = 6
+tab [7] = 7
+tab [8] = 8
+tab [9] = 9
+
+------ Test quand nbElem vaut 10 ------ 
+tab [0] = 0
+tab [1] = 1
+tab [2] = 2
+tab [3] = 3
+tab [4] = 4
+tab [5] = 5
+tab [6] = 6
+tab [7] = 7
+tab [8] = 8
+tab [9] = 9
+
+   ------ Test tous les cas normaux ------ 
+
+------ Test 1 nbElem = 7 ------ 
+tab [0] = 0
+tab [1] = 1
+tab [2] = 2
+tab [3] = 3
+tab [4] = 4
+tab [5] = 5
+tab [6] = 6
+
+------ Test 2 nbElem = 5 ------ 
+tab [0] = 0
+tab [1] = 1
+tab [2] = 2
+tab [3] = 3
+tab [4] = 4
+
+
+     ====== Test de la methode echange ====== 
+
+   ------ Le Tableau au debut ------ 
+tab [0] = 0
+tab [1] = 1
+tab [2] = 2
+tab [3] = 3
+tab [4] = 4
+tab [5] = 5
+tab [6] = 6
+tab [7] = 7
+tab [8] = 8
+tab [9] = 9
+
+   ------ Test tous les cas d'erreurs ------ 
+
+------ Test d'un tableau vide ------ 
+Le tableau est vide
+afficherTab Le tableau est vide
+
+------ Test quand nbElem est trop petit ------ 
+nbElem trop petit
+tab [0] = 0
+tab [1] = 1
+tab [2] = 2
+tab [3] = 3
+tab [4] = 4
+tab [5] = 5
+tab [6] = 6
+tab [7] = 7
+tab [8] = 8
+tab [9] = 9
+
+------ Test quand nbElem est trop grand ------ 
+nbElem trop grand
+tab [0] = 0
+tab [1] = 1
+tab [2] = 2
+tab [3] = 3
+tab [4] = 4
+tab [5] = 5
+tab [6] = 6
+tab [7] = 7
+tab [8] = 8
+tab [9] = 9
+
+------ Test quand ind1 est trop petit ------ 
+ind1 non correct
+tab [0] = 0
+tab [1] = 1
+tab [2] = 2
+tab [3] = 3
+tab [4] = 4
+tab [5] = 5
+tab [6] = 6
+tab [7] = 7
+tab [8] = 8
+tab [9] = 9
+
+------ Test quand ind1 est trop grand ------ 
+ind1 non correct
+tab [0] = 0
+tab [1] = 1
+tab [2] = 2
+tab [3] = 3
+tab [4] = 4
+tab [5] = 5
+tab [6] = 6
+tab [7] = 7
+tab [8] = 8
+tab [9] = 9
+
+------ Test quand ind2 est trop petit ------ 
+ind2 non correct
+tab [0] = 0
+tab [1] = 1
+tab [2] = 2
+tab [3] = 3
+tab [4] = 4
+tab [5] = 5
+tab [6] = 6
+tab [7] = 7
+tab [8] = 8
+tab [9] = 9
+
+------ Test quand ind2 est trop grand ------ 
+ind2 non correct
+tab [0] = 0
+tab [1] = 1
+tab [2] = 2
+tab [3] = 3
+tab [4] = 4
+tab [5] = 5
+tab [6] = 6
+tab [7] = 7
+tab [8] = 8
+tab [9] = 9
+
+   ------ Test tous les cas limites ------ 
+
+------ Test quand nbElem vaut 0 ------ 
+nbElem egale a 0
+tab [0] = 0
+tab [1] = 1
+tab [2] = 2
+tab [3] = 3
+tab [4] = 4
+tab [5] = 5
+tab [6] = 6
+tab [7] = 7
+tab [8] = 8
+tab [9] = 9
+
+------ Test quand nbElem vaut 10 ------ 
+tab [0] = 0
+tab [1] = 1
+tab [2] = 2
+tab [3] = 6
+tab [4] = 4
+tab [5] = 5
+tab [6] = 3
+tab [7] = 7
+tab [8] = 8
+tab [9] = 9
+
+------ Test quand ind1 vaut 0 ------ 
+tab [0] = 6
+tab [1] = 1
+tab [2] = 2
+tab [3] = 3
+tab [4] = 4
+tab [5] = 5
+tab [6] = 0
+tab [7] = 7
+tab [8] = 8
+tab [9] = 9
+
+------ Test quand ind1 vaut 9 ------ 
+tab [0] = 0
+tab [1] = 1
+tab [2] = 2
+tab [3] = 3
+tab [4] = 4
+tab [5] = 5
+tab [6] = 9
+tab [7] = 7
+tab [8] = 8
+tab [9] = 6
+
+------ Test quand ind2 vaut 0 ------ 
+tab [0] = 3
+tab [1] = 1
+tab [2] = 2
+tab [3] = 0
+tab [4] = 4
+tab [5] = 5
+tab [6] = 6
+tab [7] = 7
+tab [8] = 8
+tab [9] = 9
+
+------ Test quand ind2 vaut 9 ------ 
+tab [0] = 0
+tab [1] = 1
+tab [2] = 2
+tab [3] = 9
+tab [4] = 4
+tab [5] = 5
+tab [6] = 6
+tab [7] = 7
+tab [8] = 8
+tab [9] = 3
+
+   ------ Test tous les cas normaux ------ 
+
+------ Test 1 echange 3 et 9 ------ 
+tab [0] = 0
+tab [1] = 1
+tab [2] = 2
+tab [3] = 9
+tab [4] = 4
+tab [5] = 5
+tab [6] = 6
+tab [7] = 7
+tab [8] = 8
+tab [9] = 3
+
+------ Test 2 echange 7 et 4 ------ 
+tab [0] = 0
+tab [1] = 1
+tab [2] = 2
+tab [3] = 3
+tab [4] = 7
+tab [5] = 5
+tab [6] = 6
+tab [7] = 4
+tab [8] = 8
+tab [9] = 9
+
+
+     ====== Test de la methode melange ====== 
+
+   ------ Le Tableau au debut ------ 
+tab [0] = 0
+tab [1] = 1
+tab [2] = 2
+tab [3] = 3
+tab [4] = 4
+tab [5] = 5
+tab [6] = 6
+tab [7] = 7
+tab [8] = 8
+tab [9] = 9
+
+   ------ Test tous les cas d'erreurs ------ 
+
+------ Test d'un tableau vide ------ 
+Le tableau est vide
+afficherTab nbElem trop grand
+
+------ Test quand nbElem est trop petit ------ 
+nbElem trop petit
+afficherTab nbElem trop grand
+
+------ Test quand nbElem est trop grand ------ 
+nbElem trop grand
+afficherTab nbElem trop grand
+
+   ------ Test tous les cas limites ------ 
+
+------ Test quand nbElem vaut 0 ------ 
+nbElem egale a 0
+afficherTab nbElem trop grand
+
+------ Test quand nbElem vaut 10 ------ 
+tab [0] = 7
+tab [1] = 8
+tab [2] = 0
+tab [3] = 4
+tab [4] = 1
+tab [5] = 3
+tab [6] = 6
+tab [7] = 2
+tab [8] = 5
+tab [9] = 9
+
+   ------ Test tous les cas normaux ------ 
+
+------ Test 1 nbElem = 7 ------ 
+tab [0] = 4
+tab [1] = 3
+tab [2] = 1
+tab [3] = 0
+tab [4] = 2
+tab [5] = 5
+tab [6] = 6
+
+------ Test 2 nbElem = 5 ------ 
+tab [0] = 2
+tab [1] = 0
+tab [2] = 1
+tab [3] = 3
+tab [4] = 4
+
+
+     ====== Test de la methode decalerGche ====== 
+
+   ------ Le Tableau au debut ------ 
+tab [0] = 0
+tab [1] = 1
+tab [2] = 2
+tab [3] = 3
+tab [4] = 4
+tab [5] = 5
+tab [6] = 6
+tab [7] = 7
+tab [8] = 8
+tab [9] = 9
+
+   ------ Test tous les cas d'erreurs ------ 
+
+------ Test d'un tableau vide ------ 
+Le tableau est vide
+afficherTab Le tableau est vide
+
+------ Test quand nbElem est trop petit ------ 
+nbElem trop petit
+tab [0] = 0
+tab [1] = 1
+tab [2] = 2
+tab [3] = 3
+tab [4] = 4
+tab [5] = 5
+tab [6] = 6
+tab [7] = 7
+tab [8] = 8
+tab [9] = 9
+
+------ Test quand nbElem est trop grand ------ 
+nbElem trop grand
+tab [0] = 0
+tab [1] = 1
+tab [2] = 2
+tab [3] = 3
+tab [4] = 4
+tab [5] = 5
+tab [6] = 6
+tab [7] = 7
+tab [8] = 8
+tab [9] = 9
+
+------ Test quand ind est trop petit ------ 
+ind trop petit
+tab [0] = 0
+tab [1] = 1
+tab [2] = 2
+tab [3] = 3
+tab [4] = 4
+tab [5] = 5
+tab [6] = 6
+tab [7] = 7
+tab [8] = 8
+tab [9] = 9
+
+------ Test quand ind est trop grand ------ 
+ind trop grand
+tab [0] = 0
+tab [1] = 1
+tab [2] = 2
+tab [3] = 3
+tab [4] = 4
+tab [5] = 5
+tab [6] = 6
+tab [7] = 7
+tab [8] = 8
+tab [9] = 9
+
+   ------ Test tous les cas limites ------ 
+
+------ Test quand nbElem vaut 0 ------ 
+nbElem egale a 0
+tab [0] = 0
+tab [1] = 1
+tab [2] = 2
+tab [3] = 3
+tab [4] = 4
+tab [5] = 5
+tab [6] = 6
+tab [7] = 7
+tab [8] = 8
+tab [9] = 9
+
+------ Test quand nbElem vaut 10 ------ 
+tab [0] = 0
+tab [1] = 1
+tab [2] = 2
+tab [3] = 3
+tab [4] = 4
+tab [5] = 6
+tab [6] = 7
+tab [7] = 8
+tab [8] = 9
+tab [9] = 9
+
+------ Test quand ind vaut 0 ------ 
+tab [0] = 1
+tab [1] = 2
+tab [2] = 3
+tab [3] = 4
+tab [4] = 5
+tab [5] = 6
+tab [6] = 7
+tab [7] = 8
+tab [8] = 9
+tab [9] = 9
+
+------ Test quand ind vaut 9 ------ 
+ind trop grand
+tab [0] = 0
+tab [1] = 1
+tab [2] = 2
+tab [3] = 3
+tab [4] = 4
+tab [5] = 5
+tab [6] = 6
+tab [7] = 7
+tab [8] = 8
+tab [9] = 9
+
+   ------ Test tous les cas normaux ------ 
+
+------ Test 1 ind = 7 ------ 
+tab [0] = 0
+tab [1] = 1
+tab [2] = 2
+tab [3] = 3
+tab [4] = 4
+tab [5] = 5
+tab [6] = 6
+tab [7] = 8
+tab [8] = 9
+tab [9] = 9
+
+------ Test 2 ind = 5 ------ 
+tab [0] = 0
+tab [1] = 1
+tab [2] = 2
+tab [3] = 3
+tab [4] = 4
+tab [5] = 6
+tab [6] = 7
+tab [7] = 8
+tab [8] = 9
+tab [9] = 9
+
+
+     ====== Test de la methode supprimerUneValeur ====== 
+
+   ------ Le Tableau au debut ------ 
+tab [0] = 0
+tab [1] = 1
+tab [2] = 2
+tab [3] = 3
+tab [4] = 4
+tab [5] = 5
+tab [6] = 6
+tab [7] = 7
+tab [8] = 8
+tab [9] = 9
+
+   ------ Test tous les cas d'erreurs ------ 
+
+------ Test d'un tableau vide ------ 
+Le tableau est vide
+afficherTab Le tableau est vide
+
+------ Test quand nbElem est trop petit ------ 
+nbElem trop petit
+tab [0] = 0
+tab [1] = 1
+tab [2] = 2
+tab [3] = 3
+tab [4] = 4
+tab [5] = 5
+tab [6] = 6
+tab [7] = 7
+tab [8] = 8
+
+------ Test quand nbElem est trop grand ------ 
+nbElem trop grand
+tab [0] = 0
+tab [1] = 1
+tab [2] = 2
+tab [3] = 3
+tab [4] = 4
+tab [5] = 5
+tab [6] = 6
+tab [7] = 7
+tab [8] = 8
+
+   ------ Test tous les cas limites ------ 
+
+------ Test quand nbElem vaut 0 ------ 
+nbElem egale a 0
+tab [0] = 0
+tab [1] = 1
+tab [2] = 2
+tab [3] = 3
+tab [4] = 4
+tab [5] = 5
+tab [6] = 6
+tab [7] = 7
+tab [8] = 8
+
+------ Test quand nbElem vaut 10 ------ 
+tab [0] = 0
+tab [1] = 1
+tab [2] = 2
+tab [3] = 3
+tab [4] = 5
+tab [5] = 6
+tab [6] = 7
+tab [7] = 8
+tab [8] = 9
+
+   ------ Test tous les cas normaux ------ 
+
+------ Test 1 valeur = 7 ------ 
+tab [0] = 0
+tab [1] = 1
+tab [2] = 2
+tab [3] = 3
+tab [4] = 4
+tab [5] = 5
+tab [6] = 6
+tab [7] = 8
+tab [8] = 9
+
+------ Test 2 valeur = 5 ------ 
+tab [0] = 0
+tab [1] = 1
+tab [2] = 2
+tab [3] = 3
+tab [4] = 4
+tab [5] = 6
+tab [6] = 7
+tab [7] = 8
+tab [8] = 9
+
+
+     ====== Test de la methode inclusion ====== 
+
+   ------ Le Tableau au debut ------ 
+tab [0] = 0
+tab [1] = 1
+tab [2] = 2
+tab [3] = 3
+tab [4] = 4
+tab [5] = 5
+tab [6] = 6
+tab [7] = 7
+tab [8] = 8
+tab [9] = 9
+
+   ------ Test tous les cas d'erreurs ------ 
+
+------ Test tableau 1 vide ------ 
+Le tableau 1 est vide
+false
+
+------ Test tableau 2 vide ------ 
+Le tableau 2 est vide
+false
+
+------ Test quand nbElem1 est trop petit ------ 
+nbElem1 trop petit
+false
+
+------ Test quand nbElem1 est trop grand ------ 
+nbElem1 trop grand
+false
+
+------ Test quand nbElem2 est trop petit ------ 
+nbElem2 trop petit
+false
+
+------ Test quand nbElem2 est trop grand ------ 
+nbElem2 trop grand
+false
+
+   ------ Test tous les cas limites ------ 
+
+------ Test quand nbElem1 vaut 0 ------ 
+un des nbElem est egale a 0
+false
+
+------ Test quand nbElem1 vaut 10 ------ 
+true
+
+------ Test quand nbElem2 vaut 0 ------ 
+un des nbElem est egale a 0
+false
+
+------ Test quand nbElem2 vaut 10 ------ 
+true
+
+   ------ Test tous les cas normaux ------ 
+
+------ Test 1 Vrai ------ 
+true
+
+------ Test 2 Faux ------ 
+false

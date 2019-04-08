@@ -1,0 +1,101 @@
+<project default="all">
+    <property name="build.dir" value="build/main"/>
+    <property name="src.dir" value="src/main"/>
+    <property name="test.build.dir" value="build/test"/>
+    <property name="test.src.dir" value="src/test/"/>
+    <property name="doc.dir" value="doc/"/>
+    <property name="jar.dir" value="."/>
+    <property name="report.dir" value="build/report"/>
+
+    <path id="classpath">
+        <fileset dir="lib/">
+            <include name="*.jar"/>
+        </fileset>
+
+        <pathelement path="${build.dir}"/>
+        <pathelement path="${test.build.dir}"/>
+    </path>
+
+    <target name="all" depends="clean, build, report, javadoc, jar, run"/>
+    
+    <target name="clean"> 
+        <delete dir="${build.dir}"/> 
+        <delete dir="${test.build.dir}"/> 
+        <delete dir="${doc.dir}"/> 
+        <delete dir="${report.dir}"/> 
+        
+    </target> 
+    
+    <target name="build"> 
+        <mkdir dir="${build.dir}" />
+
+        <javac includeantruntime="false" srcdir="${src.dir}" destdir="${build.dir}" failonerror="true">
+            <classpath refid="classpath" />
+        </javac>
+        <echo message = "build successfully" />
+    </target>
+
+    <target name="test-build"> 
+        <mkdir dir="${test.build.dir}" /> 
+        <javac includeantruntime="false" srcdir="${test.src.dir}" destdir="${test.build.dir}" failonerror="true">
+            <classpath refid="classpath"/>
+        </javac>
+    </target>
+
+
+	<target name="junit" depends="clean, build, test-build">
+		<mkdir dir="${test.build.dir}" />
+        <junit fork="yes" printsummary="yes">
+			<classpath refid="classpath"/>
+				<formatter type="xml" />
+				<!-- Add all your test class names here. -->
+				<formatter type="plain" />
+				<batchtest todir="./build/classes">
+					<fileset dir="${test.src.dir}">
+						<include name="*Test*.java" />
+					</fileset>
+				</batchtest>
+        </junit>
+    </target>
+    
+    <target name="javadoc">
+        <mkdir dir="${doc.dir}"/>
+
+        <javadoc packagenames="*" sourcepath="${src.dir}" destdir ="${doc.dir}" version = "true" private="true" author="true" windowtitle = "BD-itor Documentation">
+            <doctitle><![CDATA[= BD-itor Documentation =]]></doctitle>
+       </javadoc>
+       
+       <echo message = "javadoc has been generated successfully" />
+    </target> 
+    
+    <target name="jar" depends="clean, build"> 
+        <mkdir dir="${jar.dir}"/>
+
+        <jar destfile="${jar.dir}/BD-itorLauncher.jar" basedir="${build.dir}"> 
+            <manifest> 
+                <attribute name="Main-Class" value="Launcher"/> 
+            </manifest>
+            <zipgroupfileset dir="lib/" includes="*.jar"/>
+
+        </jar> 
+    </target> 
+    
+    <target name="run"> 
+        <java jar="${jar.dir}/BD-itorLauncher.jar" fork="true">
+            <classpath refid="classpath"/>
+        </java>
+    </target>
+    
+    <target name="report" depends="junit">
+		<mkdir dir="./build/classes"/>
+		<junitreport todir="./build/classes">
+			<fileset dir="./build/classes">
+				<include name="TEST-*.xml" />
+			</fileset>
+			<report format="frames" todir="./build/classes"/>
+		</junitreport>
+
+		<record name="./build/classes/test-output.txt" action="start" />
+	</target>
+
+</project>

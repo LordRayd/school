@@ -1,0 +1,21 @@
+package battle;
+
+public interface IGame {
+
+	/**
+	 * 
+	 * @return
+	 */
+	public String description();
+	
+	/**
+	 * 
+	 */
+	public void start();
+	
+	/**
+	 * 
+	 */
+	public void endOfGame();
+	
+}

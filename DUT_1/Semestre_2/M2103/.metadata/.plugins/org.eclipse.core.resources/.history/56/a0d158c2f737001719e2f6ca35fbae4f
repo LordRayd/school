@@ -1,0 +1,12 @@
+package battle;
+
+/**
+ * 
+ * @author Samuel
+ *
+ */
+public enum ShotResult {
+	MISS,
+	HIT,
+	SUNK;
+}

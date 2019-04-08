@@ -1,0 +1,52 @@
+package battle;
+
+import java.util.ArrayList;
+
+/**
+ * 
+ * @author S.LEBERRE - MAI 2017
+ * @version 1.0
+ * @since JDK 1.8
+ */
+public class BattleShip {
+	
+	private int width;
+	private int height;
+	private final String delimiter ="\\s^:\\s^";
+	private Game gamePlay;
+	private ArrayList<Ship> fleet;
+	
+	/**
+	 * 
+	 * @param fileName The file were is going to be read the configuration
+	 * @param playerName1 The name of the first player
+	 * @param playerName2 The name of the second player
+	 */
+	public BattleShip(String fileName, String playerName1, String playerName2){
+		this.configure(fileName);
+		this.gamePlay = new Game(this.fleet,playerName1,playerName2,this.width,this.height);
+	}
+	
+	/**
+	 * Read a file and tale the configuration
+	 * @param fileName The file were is going to be read the configuration
+	 */
+	private void configure(String fileName){
+		
+	}
+	
+	/**
+	 * 
+	 * @return the GamePlay of the BattleShip
+	 */
+	public Game getPlay(){
+		return this.gamePlay;
+	}
+	
+	/**
+	 * 
+	 */
+	public void printConfiguration(){
+		
+	}
+}

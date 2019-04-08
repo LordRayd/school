@@ -1,0 +1,83 @@
+package battle;
+
+import java.util.ArrayList;
+
+/**
+ * 
+ * @author Samuel
+ *
+ */
+public class Game implements IGame {
+
+	private ShotResult result;
+	private Player captain;
+	private Player auto;
+	private ArrayList<Ship> fleet;
+	
+	/**
+	 * 
+	 * @param fleet
+	 * @param playerName1
+	 * @param playerName2
+	 * @param width
+	 * @param height
+	 */
+	public Game(ArrayList<Ship> fleet, String playerName1, String playerName2, int width, int height){
+		this.captain = new HumanPlayer(fleet,playerName1,width,height);
+		this.auto = new AutoPlayer(fleet,playerName2,width,height);
+		this.fleet = fleet; 
+	}
+	
+	/**
+	 * 
+	 * @param player
+	 * @return
+	 */
+	public int[] readShot(Player player){
+		int[] ret = null;
+		return ret;
+	}
+	
+	/**
+	 * 
+	 * @param shot
+	 * @return
+	 */
+	public ShotResult analizedShot(int[] shot){
+		ShotResult ret = null;
+		return ret;
+	}
+	
+	/**
+	 * 
+	 * @param player
+	 * @return
+	 */
+	public boolean allSunk(Player player){
+		boolean ret = false;
+		return ret;
+	}
+	
+	/**
+	 * 
+	 */
+	public String description(){
+		String ret = null;
+		return ret;
+	}
+	
+	/**
+	 * 
+	 */
+	public void start(){
+		
+	}
+	
+	/**
+	 * 
+	 */
+	public void endOfGame(){
+		
+	}
+	
+}

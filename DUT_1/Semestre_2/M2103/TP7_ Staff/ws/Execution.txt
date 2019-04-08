@@ -1,0 +1,69 @@
+
+The Member is named : Samuel LE BERRE
+He live at :Impasse des dauphins 56400 Vannes
+His cellphone is :0645256325
+
+The Member is named : Gurvan LORANS-CANO
+He live at :32 rue du général de Gaulle 56400 Vannes
+His cellphone is :0685642654
+
+The Member is named : Adrien COMTE
+He live at :16 rue Jean Jaurès 56400 Vannes
+His cellphone is :0634562515
+
+The Member is named : Tristan FURNO
+He live at :75 rue Pasteur 56400 Vannes
+His cellphone is :0614523652
+
+The Member is named : Yan Augerau
+He live at :14 rue Jean Marin
+His cellphone is :0652351456
+His social security number is :125032145
+His salary is : 10.5
+He have worked 20 hours
+
+The Member is named : Malo Nicolle
+He live at :45 rue Jean Marin
+His cellphone is :061789652
+His social security number is :145627851
+His salary is : 9.5
+He have worked 20 hours
+
+The Member is named : Samuel Barre
+He live at :42 rue Jean Marin
+His cellphone is :0615235524
+His social security number is :065287203
+His salary is : 11.3
+He have worked 20 hours
+
+The Member is named : Julian Descharreaux
+He live at :01 rue Jean Marin
+His cellphone is :0642425452
+His social security number is :872512515
+His salary is : 7.8
+He have worked 20 hours
+
+The Member is named : Alexandre Boudet
+He live at :2 rue Michel Behic
+His cellphone is :0625362514
+His social security number is :472422515
+His salary is : 2500.0
+He have a bonus of : 250.0
+-------------------------------------------------------
+Thanks Samuel LE BERRE for your help
+-------------------------------------------------------
+Thanks Gurvan LORANS-CANO for your help
+-------------------------------------------------------
+Thanks Adrien COMTE for your help
+-------------------------------------------------------
+Thanks Tristan FURNO for your help
+-------------------------------------------------------
+Yan Augerau was paid 210.0
+-------------------------------------------------------
+Malo Nicolle was paid 190.0
+-------------------------------------------------------
+Samuel Barre was paid 226.0
+-------------------------------------------------------
+Julian Descharreaux was paid 156.0
+-------------------------------------------------------
+Alexandre Boudet was paid 2750.0

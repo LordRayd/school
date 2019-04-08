@@ -1,0 +1,18 @@
+package battle;
+import java.util.ArrayList;
+
+	public class AutoPlayer extends Player{
+		
+		public AutoPlayer(ArrayList<Ship> fleet, String name, int width, int height){
+			super(fleet,name,width,height);
+		}
+		
+		public int[] newShot(){
+			int[] ret = null;
+			return ret;
+		}
+		
+		public void shipPlacement(){
+			
+		}
+	}

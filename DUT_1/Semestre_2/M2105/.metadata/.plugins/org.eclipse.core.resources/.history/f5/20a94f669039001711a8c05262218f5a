@@ -1,0 +1,50 @@
+import java.awt.event.FocusEvent;
+import java.awt.event.FocusListener;
+
+public class ControlerFocus implements FocusListener {
+
+	private InformationPanel iP;
+	
+	public ControlerFocus(InformationPanel iP){
+		this.iP = iP;
+	}
+	
+	@Override
+	public void focusGained(FocusEvent e) {
+	}
+
+	@Override
+	 public void focusLost(FocusEvent e){
+		
+		if(e.getSource() == iP.getNomJTF()){
+			System.out.println(iP.getNomJTF().getText());
+			if(iP.getNomJTF().getText().length() == 0){
+				iP.getNom().setText("<html>"+"Nom"+"<br/><FONT COLOR=RED> Nothing</FONT></html>");
+			}
+			// No number in the last name
+			if(iP.getNomJTF().getText().matches(".*\\d\\.*")){
+				iP.getNom().setText("<html>"+"Nom"+"<br/><FONT COLOR=RED> No Number</FONT></html>");
+			}else{
+				iP.getNom().setText("Nom");
+			}
+			// all the name in UpperCase
+			if(iP.getNomJTF().getText().matches(".*\\d\\.*") || !iP.getNomJTF().getText().matches("[^a-z]*") ){
+				iP.getNomJTF().setText(iP.getNomJTF().getText().toUpperCase());
+			}
+		}
+		
+		if(e.getSource() == iP.getPrenomJTF()){
+			// No numer in the first name
+			if(iP.getPrenomJTF().getText().matches(".*\\d\\.*")){
+				iP.getPrenom().setText("<html>"+"Prenom "+"<br/><FONT COLOR=RED> No Number</FONT></html>");
+			}else{
+				iP.getPrenom().setText("Prenom");
+			}
+			// first character in UpperCase
+			if(iP.getPrenomJTF().getText().matches(".*\\d\\.*") || !iP.getPrenomJTF().getText().matches("[^a-z]{1}") ){
+				String prenom = iP.getPrenomJTF().getText().toLowerCase().replaceFirst(".",(iP.getPrenomJTF().getText().charAt(0)+"").toUpperCase());
+				iP.getPrenomJTF().setText(prenom);
+			}
+		}
+	}
+}

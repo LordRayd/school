@@ -1,0 +1,285 @@
+import java.awt.BorderLayout;
+import java.awt.GridBagConstraints;
+import java.awt.GridBagLayout;
+import java.awt.GridLayout;
+import java.awt.Insets;
+import java.util.Vector;
+
+import javax.swing.ButtonGroup;
+import javax.swing.JCheckBox;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JRadioButton;
+import javax.swing.JScrollPane;
+import javax.swing.JTable;
+import javax.swing.JTextField;
+import javax.swing.table.DefaultTableModel;
+
+public class InformationPanel extends JPanel{
+	
+	private JTextField nomJTF;
+	private JTextField prenomJTF;
+	private JTextField dateNaissanceJTF;
+	private JTextField courrielJTF;
+	private JLabel nom;
+	private JLabel prenom;
+	private JLabel dateNaissance;
+	private JLabel courriel;
+	private JLabel redoublant;
+	private JLabel listeEval;
+	private JLabel moyenne;
+	private JRadioButton homme;
+	private JRadioButton femme;
+	private ButtonGroup group;
+	private JCheckBox premiereACB;
+	private JCheckBox deuxiemeACB;
+	private JTable evaluation;
+	private DefaultTableModel model;
+	private Vector<String> columnNames;
+	private InterfaceGraphique iG;
+	
+	public InformationPanel(InterfaceGraphique iG){
+		this.iG = iG;
+		leftPane();
+		rightPane();
+	}
+
+	private void leftPane(){
+		setLayout(new GridLayout(1,2,50,50));
+		JPanel details = new JPanel();
+		nom = new JLabel("Nom");
+		prenom = new JLabel("Prenom");
+		dateNaissance = new JLabel("Date de naissance");
+		courriel = new JLabel("Courriel");
+		redoublant = new JLabel("Redoublant");
+		nomJTF = new JTextField();
+		prenomJTF = new JTextField();
+		dateNaissanceJTF = new JTextField();
+		courrielJTF = new JTextField();	
+		homme = new JRadioButton("H");
+		femme = new JRadioButton("F");
+		group = new ButtonGroup();
+		group.add(homme);
+		group.add(femme);
+		premiereACB = new JCheckBox("1A");
+		deuxiemeACB = new JCheckBox("2A");
+		
+		details.setLayout(new GridBagLayout());
+		GridBagConstraints gBC = new GridBagConstraints();
+		gBC.fill = GridBagConstraints.BOTH;
+		gBC.insets = new Insets(10,15,10,15);
+		gBC.weightx = 2;
+		gBC.weighty = 7;
+		
+		gBC.gridx = 0;
+		gBC.gridy = 0;
+		details.add(nom,gBC);
+		
+		gBC.gridx = 0;
+		gBC.gridy = 2;
+		details.add(prenom,gBC);
+		
+		gBC.gridx = 0;
+		gBC.gridy = 4;
+		details.add(dateNaissance,gBC);
+		
+		gBC.gridx = 0;
+		gBC.gridy = 4;
+		details.add(courriel,gBC);
+		
+		gBC.gridx = 0;
+		gBC.gridy = 1;
+		details.add(nomJTF,gBC);
+		
+		gBC.gridx = 0;
+		gBC.gridy = 3;
+		details.add(prenomJTF,gBC);
+		
+		gBC.gridx = 0;
+		gBC.gridy = 4;
+		details.add(dateNaissanceJTF,gBC);
+		
+		gBC.gridx = 0;
+		gBC.gridy = 4;
+		details.add(courrielJTF,gBC);
+		
+		gBC.gridx = 0;
+		gBC.gridy = 4;
+		details.add(homme,gBC);
+		
+		gBC.gridx = 0;
+		gBC.gridy = 4;
+		details.add(femme,gBC);
+		
+		gBC.gridx = 0;
+		gBC.gridy = 4;
+		details.add(redoublant,gBC);
+		
+		gBC.gridx = 0;
+		gBC.gridy = 4;
+		details.add(premiereACB,gBC);
+		
+		gBC.gridx = 0;
+		gBC.gridy = 4;
+		details.add(deuxiemeACB,gBC);
+		
+		add(details);
+	}
+
+	private void rightPane(){
+		JPanel rightPane = new JPanel();
+		rightPane.setLayout(new BorderLayout());
+		columnNames = new Vector<String>();
+		columnNames.add("Liste des Evaluations");
+	  	columnNames.add("Moyenne");	 
+	    model = new DefaultTableModel(columnNames, 50);
+		evaluation = new JTable(model);
+		rightPane.add(new JScrollPane(evaluation));
+		add(rightPane);
+	}
+
+	public JTextField getNomJTF() {
+		return nomJTF;
+	}
+
+	public void setNomJTF(JTextField nomJTF) {
+		this.nomJTF = nomJTF;
+	}
+
+	public JTextField getPrenomJTF() {
+		return prenomJTF;
+	}
+
+	public void setPrenomJTF(JTextField prenomJTF) {
+		this.prenomJTF = prenomJTF;
+	}
+
+	public JTextField getDateNaissanceJTF() {
+		return dateNaissanceJTF;
+	}
+
+	public void setDateNaissanceJTF(JTextField dateNaissanceJTF) {
+		this.dateNaissanceJTF = dateNaissanceJTF;
+	}
+
+	public JTextField getCourrielJTF() {
+		return courrielJTF;
+	}
+
+	public void setCourrielJTF(JTextField courrielJTF) {
+		this.courrielJTF = courrielJTF;
+	}
+
+	public JLabel getNom() {
+		return nom;
+	}
+
+	public void setNom(JLabel nom) {
+		this.nom = nom;
+	}
+
+	public JLabel getPrenom() {
+		return prenom;
+	}
+
+	public void setPrenom(JLabel prenom) {
+		this.prenom = prenom;
+	}
+
+	public JLabel getDateNaissance() {
+		return dateNaissance;
+	}
+
+	public void setDateNaissance(JLabel dateNaissance) {
+		this.dateNaissance = dateNaissance;
+	}
+
+	public JLabel getCourriel() {
+		return courriel;
+	}
+
+	public void setCourriel(JLabel courriel) {
+		this.courriel = courriel;
+	}
+
+	public JLabel getRedoublant() {
+		return redoublant;
+	}
+
+	public void setRedoublant(JLabel redoublant) {
+		this.redoublant = redoublant;
+	}
+
+	public JLabel getListeEval() {
+		return listeEval;
+	}
+
+	public void setListeEval(JLabel listeEval) {
+		this.listeEval = listeEval;
+	}
+
+	public JLabel getMoyenne() {
+		return moyenne;
+	}
+
+	public void setMoyenne(JLabel moyenne) {
+		this.moyenne = moyenne;
+	}
+
+	public JRadioButton getHomme() {
+		return homme;
+	}
+
+	public void setHomme(JRadioButton homme) {
+		this.homme = homme;
+	}
+
+	public JRadioButton getFemme() {
+		return femme;
+	}
+
+	public void setFemme(JRadioButton femme) {
+		this.femme = femme;
+	}
+
+	public JCheckBox getPremiereACB() {
+		return premiereACB;
+	}
+
+	public void setPremiereACB(JCheckBox premiereACB) {
+		this.premiereACB = premiereACB;
+	}
+
+	public JCheckBox getDeuxiemeACB() {
+		return deuxiemeACB;
+	}
+
+	public void setDeuxiemeACB(JCheckBox deuxiemeACB) {
+		this.deuxiemeACB = deuxiemeACB;
+	}
+
+	public JTable getEvaluation() {
+		return evaluation;
+	}
+
+	public void setEvaluation(JTable evaluation) {
+		this.evaluation = evaluation;
+	}
+
+	public DefaultTableModel getModel() {
+		return model;
+	}
+
+	public void setModel(DefaultTableModel model) {
+		this.model = model;
+	}
+
+	public Vector<String> getColumnNames() {
+		return columnNames;
+	}
+
+	public void setColumnNames(Vector<String> columnNames) {
+		this.columnNames = columnNames;
+	}
+	
+}

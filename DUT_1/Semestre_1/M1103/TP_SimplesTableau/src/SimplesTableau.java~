@@ -1,0 +1,82 @@
+/**
+  *Rôle de votre classe (programme), à compléter
+  */
+public class SimplesTableau {
+
+	/**
+	  * Point d'entrée de l'exécution
+	  */
+	void principal() {
+
+		// appel des cas de test un par un
+		testAfficherTab();
+
+	}
+
+
+	/**
+	  * Rôle de la méthode
+	  */
+	void afficherTab(int [] leTab, int nbElem) {
+		
+		// code complet de la méthode, à écrire
+		// cette méthode sera testé par testAfficherTab()
+		// à compléter...
+		if(leTab == null) {
+			System.out.println("Le tableau est vide");
+		}else if(nbElem < 0) {
+			System.out.println("nbElem trop petit");
+		}else if(nbElem > leTab.length) {
+			System.out.println("nbElem trop grand");
+		}else {
+			for(int i=0,i<nbElem,i++) {
+				System.out.println("tab [" + i + "] = " + tab[i]);
+			}
+		}
+	}
+
+
+	/**
+	  * Test de la méthode afficherTab
+	  */
+	void testAfficherTab() {
+
+		System.out.println(("\n ------ Test de la méthode afficherTab ------ ");
+
+
+		// Test les cas d'erreurs
+		System.out.println(("\n ------ Test tous les cas d'erreurs ------ ");
+
+		// Test un tableau vide
+		System.out.println(("\n ------ Test d'un tableau vide ------ ");
+		int [] tab;
+		afficherTab(tab,10);
+		
+		// Test quand nbElem est trop petit
+		System.out.println(("\n ------ Test quand nbElem est trop petit ------ ");
+		int [] letab = {0,1,2,3,4,5,6,7,8,9}
+		afficherTab(letab,-1);
+
+		// Test quand nbElem est trop grand
+		System.out.println(("\n ------ Test quand nbElem est trop grand ------ ");
+		afficherTab(letab,11);
+
+		
+		// Test les cas limites
+		System.out.println(("\n ------ Test tous les cas limites ------ ");
+
+		// Test quand nbElem vaut 0
+		System.out.println(("\n ------ Test quand nbElem vaut 0 ------ ");
+		afficherTab(letab,0);
+
+		// Test quand nbElem vaut 10
+		System.out.println(("\n ------ Test quand nbElem vaut 10 ------ ");
+		afficherTab(letab,10);
+
+
+		// Test un cas normal
+		System.out.println(("\n ------ Test d'un cas normal ------ ");
+		afficherTab(letab,5);
+	}
+
+}

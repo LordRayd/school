@@ -1,0 +1,39 @@
+  import javax.swing.*;
+  import java.awt.*;
+  import java.util.*;
+  import java.time.*;
+  /**
+  * Classe Interface graphique
+  * @author Furno - Le Berre -- Groupe A
+  * @version 1.0
+  */
+  public class InterfaceGraphique extends JFrame {
+    /** Creates new form CelsiusConverterGUI */
+    public InterfaceGraphique() {
+      initComponents();
+    }
+
+    /** This method is called from within the constructor to
+    * initialize the form.
+    */
+    private void initComponents() {
+      setDefaultCloseOperation (javax.swing.WindowConstants.EXIT_ON_CLOSE);
+      setTitle("Contact");
+      setLocationRelativeTo(null);
+      add(new ToolBar(),BorderLayout.WEST);
+      add(new StatusBar("Toto", "16 : 08 | 28/04/2017" ), BorderLayout.SOUTH);
+      // pack();
+      setSize(1000,500);
+    }
+
+    /**
+    * @param args the command line arguments
+    */
+    public static void main(String args[]) {
+      java.awt.EventQueue.invokeLater(new Runnable() {
+        public void run() {
+          new InterfaceGraphique().setVisible(true);
+        }
+      });
+    }
+  }

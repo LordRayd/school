@@ -1,0 +1,24 @@
+
+javadoc:
+    [mkdir] Created dir: D:\Dut_Informatique\Semestre2\M2107\Projet\doc
+  [javadoc] D:\Dut_Informatique\Semestre2\M2107\Projet\src\main contains source files in the default package, you must specify them as source files not packages.
+  [javadoc] Generating Javadoc
+  [javadoc] Javadoc execution
+  [javadoc] Loading source files for package controller...
+  [javadoc] Loading source files for package model...
+  [javadoc] Loading source files for package view...
+  [javadoc] Constructing Javadoc information...
+  [javadoc] Standard Doclet version 1.8.0_60
+  [javadoc] Building tree for all the packages and classes...
+  [javadoc] Building index for all the packages and classes...
+  [javadoc] Building index for all classes...
+     [echo] javadoc has been generated successfully
+
+jar:
+      [jar] Building jar: D:\Dut_Informatique\Semestre2\M2107\Projet\BD-itorLauncher.jar
+
+run:
+
+all:
+
+BUILD SUCCESSFUL

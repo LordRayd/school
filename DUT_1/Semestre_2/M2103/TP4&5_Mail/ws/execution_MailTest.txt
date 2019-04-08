@@ -1,0 +1,102 @@
+
+===============================================================
+===============Test of the MailItem class======================
+===============================================================
+
+Sender of the first mail : Pierre
+Sender of the forth mail : unknow
+
+Receiver of the first mail : Jean
+Receiver of the forth mail : unknow
+
+Message of the first mail : Hello Mr Jean
+Message of the forth mail : unknow
+
+The sender is : Pierre
+The receiver is : Jean
+Message : Hello Mr Jean
+
+The sender is : Pierre
+The receiver is : Jacque
+Message : Sorry i ll be late to our meeting
+
+The sender is : Jean
+The receiver is : Pierre
+Message : To continue our conversation
+
+The sender is : unknow
+The receiver is : unknow
+Message : unknow
+
+The sender is : Pierre
+The receiver is : unknow
+Message : unknow
+
+The sender is : unknow
+The receiver is : Jacque
+Message : unknow
+
+The sender is : unknow
+The receiver is : unknow
+Message : Hello we are going to play a game
+
+The sender is : Jean
+The receiver is : Pierre
+Message : To end the conversation
+
+The sender is : Jean
+The receiver is : Pierre
+Message : The best conversation ever
+
+===============================================================
+===============Test of the MailServer class====================
+===============================================================
+
+Pierre have 2 mails unread
+
+The sender is : Jean
+The receiver is : Pierre
+Message : To end the conversation
+
+Pierre have 1 mails unread
+
+The sender is : Jean
+The receiver is : Pierre
+Message : To continue our conversation
+
+Pierre have 0 mails unread
+
+Pierre have 1 mails unread
+
+The sender is : unknow
+The receiver is : Jacque
+Message : unknow
+
+param FALSE for post
+
+param FALSE for getNextMailItem
+Last message of Bertrand : null
+
+===============================================================
+===============Test of the MailClient class====================
+===============================================================
+
+The sender is : James
+The receiver is : Bernard
+Message : A message from James to Bernard
+
+The sender is : Bernard
+The receiver is : James
+Message : A message from Bernard to James
+
+The sender is : James
+The receiver is : Toto
+Message : A message from James to Toto
+
+The sender is : Toto
+The receiver is : Titi
+Message : A message from Toto to Titi
+
+The sender is : Titi
+The receiver is : Tata
+Message : A message from Titi to Tata

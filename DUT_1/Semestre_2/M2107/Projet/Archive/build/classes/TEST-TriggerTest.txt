@@ -1,0 +1,6 @@
+Testsuite: TriggerTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2,129 sec
+
+Testcase: numberOfTriggerTest took 0,683 sec
+Testcase: getTriggerNameTest took 0,597 sec
+Testcase: getCodeTriggerTest took 0,381 sec

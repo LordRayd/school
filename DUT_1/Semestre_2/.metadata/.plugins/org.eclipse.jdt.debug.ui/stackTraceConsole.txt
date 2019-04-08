@@ -1,0 +1,4 @@
+this.db = new ControllerDB(base,id,passwd);
+//				//						this.connection.setVisible(false);
+//				//						this.connection.dispose();
+//				//						new GUI(this.db);

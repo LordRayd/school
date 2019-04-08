@@ -1,0 +1,10 @@
+Testsuite: TableTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3,542 sec
+
+Testcase: nbTuplesTest took 0,569 sec
+Testcase: getTableNameTest took 0,637 sec
+Testcase: numberOfColumnTest took 0,329 sec
+Testcase: tableToArrayListTest took 0,368 sec
+Testcase: returnTableTest took 0,323 sec
+Testcase: getColumnNameTest took 0,18 sec
+Testcase: numberOfTableTest took 0,604 sec

@@ -1,0 +1,230 @@
+================================== Test of the class Rational ================================== 
+
+
+
+================= Test of the method Rational ================= 
+
+
+--------- All the errors cases
+There is no errors cases
+
+
+--------- All the limits cases
+There is no limits cases
+
+
+--------- All the normals cases
+
+----print 4/3
+The numerator of the fraction is 4 . 
+The denominator of the fraction is 3 . 
+The fraction is equals to 4/3 .
+
+
+
+================= Test of the method getNumerator ================= 
+
+
+--------- All the errors cases
+There is no errors cases
+
+
+--------- All the limits cases
+
+---- print -4
+-4
+
+
+--------- All the normals cases
+
+---- print 6
+6
+
+---- print 8
+8
+
+
+
+================= Test of the method setNumerator ================= 
+
+
+--------- All the errors cases
+There is no errors cases
+
+
+--------- All the limits cases
+
+---- print -4
+-4
+
+---- print 6
+-4
+
+
+--------- All the normals cases
+
+---- print 5
+5
+
+---- print 6
+6
+
+
+
+================= Test of the method getDenominator ================= 
+
+
+--------- All the errors cases
+There is no errors cases
+
+
+--------- All the limits cases
+
+---- print -5
+-5
+
+
+--------- All the normals cases
+
+---- print 10
+10
+
+---- print 1
+1
+
+
+
+================= Test of the method setDenominator ================= 
+
+
+--------- All the errors cases
+
+---- Test with 0. Replace 0 by -1
+-1
+
+
+--------- All the limits cases
+
+---- print -4
+-4
+
+---- print 6
+6
+
+
+--------- All the normals cases
+
+---- print 5
+5
+
+---- print 6
+6
+
+
+
+================= Test of the method reduce ================= 
+We can't test it directly but we use it in the method equals
+The potential test method if reduce was public is in the code
+
+
+
+================= Test of the method reverse ================= 
+
+
+--------- All the errors cases
+
+----Test when numerator = 0. Change denominator in -1
+A fraction can't have 0 in denominator
+The numerator of the fraction is -1 . 
+The denominator of the fraction is 1 . 
+The fraction is equals to -1/1 .
+
+
+--------- All the limits cases
+There is no limits cases
+
+
+--------- All the normals cases
+
+----print 9/5
+The numerator of the fraction is 9 . 
+The denominator of the fraction is 5 . 
+The fraction is equals to 9/5 .
+
+----print 8/-3
+The numerator of the fraction is 8 . 
+The denominator of the fraction is -3 . 
+The fraction is equals to 8/-3 .
+
+
+
+================= Test of the method add ================= 
+
+
+--------- All the errors cases
+There is no errors cases
+
+
+--------- All the limits cases 
+
+----print -1/2
+The numerator of the fraction is -1 . 
+The denominator of the fraction is 2 . 
+The fraction is equals to -1/2 .
+
+
+--------- All the normals cases
+
+----print 6/3
+The numerator of the fraction is 6 . 
+The denominator of the fraction is 3 . 
+The fraction is equals to 6/3 .
+
+
+
+================= Test of the method subtracted ================= 
+
+
+--------- All the errors cases
+There is no errors cases
+
+
+--------- All the limits cases
+
+----2/3 subtracted -3/2. print 5/3
+The numerator of the fraction is 5 . 
+The denominator of the fraction is 3 . 
+The fraction is equals to 5/3 .
+
+
+--------- All the normals cases
+
+----3/2 subtracted 2/1. print -1/2
+The numerator of the fraction is -1 . 
+The denominator of the fraction is 2 . 
+The fraction is equals to -1/2 .
+
+----7/2 subtracted 2/1. print 3/2
+The numerator of the fraction is 3 . 
+The denominator of the fraction is 2 . 
+The fraction is equals to 3/2 .
+
+
+
+================= Test of the method toString ================= 
+
+
+--------- All the errors cases
+There is no errors cases
+
+
+--------- All the limits cases
+There is no limits cases
+
+
+--------- All the normals cases
+
+----print 5/2
+The numerator of the fraction is 5 . 
+The denominator of the fraction is 2 . 
+The fraction is equals to 5/2 .

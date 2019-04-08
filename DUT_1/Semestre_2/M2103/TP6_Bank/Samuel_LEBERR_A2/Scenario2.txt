@@ -1,0 +1,38 @@
+
+======== Test constructor ========
+
+======== Test addAccount ========
+
+Test OK bankaccount
+
+Test OK checkingaccount
+
+Test OK savingsaccount
+
+Test FALSE add object null
+Param addAccount FALSE
+
+======== Test getTotalBalance ========
+Total balance = 140
+Result = 140.0
+
+======== Test count ========
+Total count >=30  = 3
+Result = 3
+Total count >=40  = 2
+Result = 2
+
+======== Test find ========
+find 2
+Result = 2.0
+find 3
+Result = 3.0
+find 1
+Result = 1.0
+
+======== Test getMaximum ========
+Maximum balance of bank1 is 50
+Result :
+Your count Number : 1.0
+You have 50.0 on your count
+You can have an overdraft of : -10.5

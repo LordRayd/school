@@ -1,0 +1,38 @@
+
+Nom : Robert
+Nombre de notes : 4
+Notes : 20
+Coefficient : 1
+Notes : 5
+Coefficient : 4
+Notes : 3
+Coefficient : 3
+Notes : 10
+Coefficient : 10
+
+Nom : Bernarde
+Nombre de notes : 2
+Notes : 1
+Coefficient : 10
+Notes : 10
+Coefficient : 1
+
+Nom : Bernarde
+Nombre de notes : 2
+Notes : 1
+Coefficient : 10
+Notes : 10
+Coefficient : 1
+Moyenne : 1.8
+
+Nom : Robert
+Nombre de notes : 4
+Notes : 20
+Coefficient : 1
+Notes : 5
+Coefficient : 4
+Notes : 3
+Coefficient : 3
+Notes : 10
+Coefficient : 10
+Moyenne : 8.3

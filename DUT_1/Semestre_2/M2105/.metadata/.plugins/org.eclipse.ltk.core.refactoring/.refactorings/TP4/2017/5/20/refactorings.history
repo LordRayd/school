@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;TP4/src/Controler.java&apos; to &apos;ControlerButton.java&apos;" description="Rename resource &apos;Controler.java&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/Controler.java" name="ControlerButton.java" stamp="1494869945955" updateReferences="true"/>
+</session>

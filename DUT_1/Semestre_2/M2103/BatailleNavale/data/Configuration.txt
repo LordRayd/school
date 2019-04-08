@@ -1,0 +1,10 @@
+10
+10
+boat1
+8
+boat2
+8
+boat3
+8
+boat4
+8

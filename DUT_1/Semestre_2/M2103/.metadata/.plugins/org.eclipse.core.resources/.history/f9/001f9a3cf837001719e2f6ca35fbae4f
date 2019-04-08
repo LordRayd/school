@@ -1,0 +1,27 @@
+package battle;
+
+/**
+ * 
+ * @author S.LEBERRE - MAI 2017
+ * @version 
+ * @since JDK 1.8
+ */
+public interface IGame {
+
+	/**
+	 * 
+	 * @return
+	 */
+	public String description();
+	
+	/**
+	 * 
+	 */
+	public void start();
+	
+	/**
+	 * 
+	 */
+	public void endOfGame();
+	
+}

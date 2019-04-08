@@ -1,0 +1,30 @@
+import javax.swing.*;
+import java.awt.*;
+import java.util.*;
+import java.text.SimpleDateFormat;
+
+/**
+* Classe StatusBar pour l'interface graphique
+* @author Furno - Le Berre -- Groupe A
+* @version 1.0
+*/
+public class StatusBar extends JPanel{
+
+  private JLabel nameLabel;
+  private JLabel dateLabel;
+  
+  public StatusBar(String nom, Date date){
+    super();
+    SimpleDateFormat f = new SimpleDateFormat("dd/MM/yyyy");
+    nameLabel = new JLabel("Bonjour " + nom + " !");
+    dateLabel = new JLabel(f.format(date));
+    setLayout(new BorderLayout());;
+    add(nameLabel,BorderLayout.WEST);
+    add(dateLabel,BorderLayout.EAST);
+    setVisible(true);
+  }
+  
+  public void setAction(String nom){
+    this.nameLabel.setText(nom);
+  }
+}

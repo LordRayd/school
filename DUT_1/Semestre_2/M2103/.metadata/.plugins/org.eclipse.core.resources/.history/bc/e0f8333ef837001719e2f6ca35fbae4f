@@ -1,0 +1,13 @@
+package battle;
+
+/**
+ * 
+ * @author S.LEBERRE - MAI 2017
+ * @version 
+ * @since JDK 1.8
+ */
+public enum ShotResult {
+	MISS,
+	HIT,
+	SUNK;
+}

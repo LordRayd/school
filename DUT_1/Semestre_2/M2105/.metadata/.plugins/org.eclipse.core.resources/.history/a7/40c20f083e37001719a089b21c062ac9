@@ -1,0 +1,68 @@
+import java.awt.BorderLayout;
+import java.util.Date;
+
+import javax.swing.JFrame;
+
+  /**
+  * Classe Interface graphique
+  * @author Furno - Le Berre -- Groupe A
+  * @version 1.0
+  */
+  public class InterfaceGraphique extends JFrame {
+
+    public ToolBar toolBar;
+    public StatusBar statusBar;
+    public InformationPanel informationPanel;
+    
+  /** Creates new form CelsiusConverterGUI */
+  public static void main(String[] args){
+    initComponents(nom);
+  }
+
+  /** This method is called from within the constructor to
+  * initialize the form.
+  */
+  private void initComponents(String nom) {
+    setDefaultCloseOperation (javax.swing.WindowConstants.EXIT_ON_CLOSE);
+    setTitle(nom);
+    setLocationRelativeTo(null);
+    toolBar = new ToolBar();
+    statusBar = new StatusBar(nom, new Date());
+    informationPanel = new InformationPanel();
+    add(toolBar, BorderLayout.WEST);
+    add(statusBar, BorderLayout.SOUTH);
+    add(informationPanel, BorderLayout.CENTER);
+    setSize(1000,500);
+    toolBar.getNewButton().addActionListener(new Controler(this));
+    toolBar.getRemoveButton().addActionListener(new Controler(this));
+    toolBar.getLoadButton().addActionListener(new Controler(this));
+    toolBar.getSaveButton().addActionListener(new Controler(this));
+    toolBar.getSaveAsButton().addActionListener(new Controler(this));
+    
+    informationPanel.getNomJTF().addActionListener(new Controler(this));
+    informationPanel.getPrenomJTF().addActionListener(new Controler(this));
+    informationPanel.getDateNaissanceJTF().addActionListener(new Controler(this));
+    informationPanel.getCourrielJTF().addActionListener(new Controler(this));
+
+  }
+
+  /**
+  * @param args the command line arguments
+  */
+  public static void main(String args[]) {
+    java.awt.EventQueue.invokeLater(new Runnable() {
+      public void run() {
+        new InterfaceGraphique("Toto").setVisible(true);
+      }
+    });
+  }
+  public StatusBar getStatusBar(){
+    return this.statusBar;
+  }
+  public ToolBar getToolBar(){
+    return this.toolBar;
+  }
+  public InformationPanel getInformationPanel(){
+	  return this.informationPanel;
+  }
+}

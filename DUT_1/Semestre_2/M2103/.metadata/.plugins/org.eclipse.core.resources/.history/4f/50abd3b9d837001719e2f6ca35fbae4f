@@ -1,0 +1,16 @@
+package battle;
+
+public class Square {
+
+	private int x;
+	private int y;
+	private boolean free;
+	private boolean hit;
+	
+	public Square(int x, int y){
+		this.x =x;
+		this.y = y;
+		this.free = true;
+		this.hit = false;
+	}
+}

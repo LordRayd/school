@@ -1,0 +1,17 @@
+import battle.*;
+/**
+ * 
+ * @author Samuel
+ *
+ */
+public class LaunchBattle {
+	
+	/**
+	 * 
+	 * @param args
+	 */
+	public static void main(String[] args){
+		new BattleShip("file","nom1","nom2");
+	}
+
+}

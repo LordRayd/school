@@ -1,0 +1,59 @@
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+public class Controler implements ActionListener{
+
+    private StatusBar statusBar;
+    private ToolBar toolBar;
+    private InformationPanel iP;
+    
+    /**
+     * 
+     * @param iG
+     */
+    public Controler(InterfaceGraphique iG){
+    	this.statusBar = iG.getStatusBar();
+    	this.toolBar = iG.getToolBar();
+    	this.iP = iG.getInformationPanel();
+    }
+    
+    /**
+     * 
+     */
+    public void actionPerformed(ActionEvent clic){
+		if(clic.getSource() == toolBar.getRemoveButton()){
+			statusBar.setAction("remove");
+			System.out.println("remove");
+		}
+		if(clic.getSource() == toolBar.getNewButton()){
+            statusBar.setAction("new");
+            System.out.println("new");
+		}
+		if(clic.getSource() == toolBar.getSaveButton()){
+            statusBar.setAction("save");
+            System.out.println("save");
+		}
+		if(clic.getSource() == toolBar.getSaveAsButton()){
+            statusBar.setAction("saveAs");
+            System.out.println("saveAs");
+		}
+		if(clic.getSource() == toolBar.getLoadButton()){
+            statusBar.setAction("load");
+            System.out.println("load");
+		}
+		
+		
+		if(clic.getSource() == iP.getNomJTF() && iP.getNomJTF().getText().matches("^[A-Z].*\\d\\.*")){
+			iP.getNom().setText("<html>"+"Nom"+"<br/><FONT COLOR=RED> No Number</FONT></html>");
+            System.out.println("Pas lettres");
+		}
+		if(clic.getSource() == iP.getPrenomJTF() && iP.getPrenomJTF().getText().matches(".*\\d\\.*")){
+			iP.getPrenom().setText("<html>"+"Prenom "+"<br/><FONT COLOR=RED> No Number</FONT></html>");
+            System.out.println("Pas chiffres");
+		}
+		if(clic.getSource() == iP.getDateNaissanceJTF() && !iP.getDateNaissanceJTF().getText().matches("\\d{2}\\/\\d{2}\\/\\d{4}") ){
+			iP.getDateNaissance().setText("<html>"+"Date de naissance"+"<br/><FONT COLOR=RED> Incorrect format(DD/MM/YYYY)</FONT></html>");
+		}else{
+			iP.getDateNaissance().setText("Date de naissance");
+		}
+    }
+}

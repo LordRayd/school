@@ -1,0 +1,11 @@
+package battle;
+
+/**
+ * 
+ * @author Samuel
+ *
+ */
+public enum Direction {
+	HORIZONTAL,
+	VERTICAL;
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+<typeInfo handle="=BatailleNavale/C:\/Program Files\/Java\/jdk1.8.0_60\/jre\/lib\/rt.jar&lt;javax.swing.table(AbstractTableModel.class[AbstractTableModel" modifiers="1057" timestamp="1491915085741"/>
+<typeInfo handle="=BatailleNavale/src&lt;view{SimpleFrame.java[SimpleFrame" modifiers="1" timestamp="1496605647072"/>
+<typeInfo handle="=Projet/C:\/Program Files\/Java\/jdk1.8.0_60\/jre\/lib\/rt.jar&lt;javax.swing(JMenuBar.class[JMenuBar" modifiers="33" timestamp="1491915085741"/>
+<typeInfo handle="=Projet/C:\/Program Files\/Java\/jdk1.8.0_60\/jre\/lib\/rt.jar&lt;java.awt.event(MouseListener.class[MouseListener" modifiers="1537" timestamp="1491915085741"/>
+<typeInfo handle="=Projet/C:\/Program Files\/Java\/jdk1.8.0_60\/jre\/lib\/rt.jar&lt;java.awt.peer(MouseInfoPeer.class[MouseInfoPeer" modifiers="1537" timestamp="1491915085741"/>
+<typeInfo handle="=Projet/C:\/Program Files\/Java\/jdk1.8.0_60\/jre\/lib\/rt.jar&lt;javax.swing.event(TreeSelectionListener.class[TreeSelectionListener" modifiers="1537" timestamp="1491915085741"/>
+<typeInfo handle="=Projet/C:\/Program Files\/Java\/jdk1.8.0_60\/jre\/lib\/rt.jar&lt;javax.swing.event(TreeModelListener.class[TreeModelListener" modifiers="1537" timestamp="1491915085741"/>
+<typeInfo handle="=Projet/C:\/Program Files\/Java\/jdk1.8.0_60\/jre\/lib\/rt.jar&lt;java.util(Formatter.class[Formatter" modifiers="49" timestamp="1491915085741"/>
+<typeInfo handle="=Projet/C:\/Program Files\/Java\/jdk1.8.0_60\/jre\/lib\/rt.jar&lt;javax.swing(SwingWorker.class[SwingWorker" modifiers="1057" timestamp="1491915085741"/>
+<typeInfo handle="=Projet/C:\/Program Files\/Java\/jdk1.8.0_60\/jre\/lib\/rt.jar&lt;javax.swing(JScrollPane.class[JScrollPane" modifiers="33" timestamp="1491915085741"/>
+<typeInfo handle="=TP6/C:\/Program Files\/Java\/jdk1.8.0_60\/jre\/lib\/rt.jar&lt;javax.swing(JPanel.class[JPanel" modifiers="33" timestamp="1491915085741"/>
+<typeInfo handle="=Projet/C:\/Program Files\/Java\/jdk1.8.0_60\/jre\/lib\/rt.jar&lt;javax.swing(JDialog.class[JDialog" modifiers="33" timestamp="1491915085741"/>
+<typeInfo handle="=Projet/C:\/Program Files\/Java\/jdk1.8.0_60\/jre\/lib\/rt.jar&lt;java.awt.event(ActionListener.class[ActionListener" modifiers="1537" timestamp="1491915085741"/>
+<typeInfo handle="=Projet/src&lt;controller{ControllerDB.java[ControllerDB" modifiers="1" timestamp="1498413561252"/>
+<typeInfo handle="=TP6/C:\/Program Files\/Java\/jdk1.8.0_60\/jre\/lib\/rt.jar&lt;javax.swing(JFrame.class[JFrame" modifiers="33" timestamp="1491915085741"/>
+<typeInfo handle="=BomberMan/src&lt;model{Joueur.java[Joueur" modifiers="1" timestamp="1498732797868"/>
+</typeInfoHistroy>

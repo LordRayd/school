@@ -1,0 +1,65 @@
+package battle;
+import java.util.ArrayList;
+	/**
+	 * 2 tableaux square[][]
+	 * gère les tableaux 
+	 *
+	 */
+	public abstract class Player{
+		
+		protected String name;
+		protected int width;
+		protected int height;
+		protected ArrayList<Ship> fleet;
+		protected Square[][] myGrid;
+		protected Square[][] oponentGrid;
+		
+		public Player(ArrayList<Ship> fleet, String name, int width, int height){
+			this.createCopy(fleet);
+			this.name =name;
+			this.width = width;
+			this.height = height;
+			this.initializeMyGrid();
+			this.initializeOponentGrid();
+			this.shipPlacement();
+		}
+		
+		protected void createCopy(ArrayList<Ship> fleet){
+			for(Ship boat : fleet){
+					Ship ship = boat;
+	 				this.fleet.add(ship);
+	 		}
+		}
+		
+		protected void initializeMyGrid(){
+			for(int i = 0; i < this.width; i++){
+				for(int j = 0; j < this.height; j++){
+					this.myGrid[i][j] = new Square(i,j);
+				}
+			}
+		}
+		
+		protected void initializeOponentGrid(){
+			for(int i = 0; i < this.width; i++){
+				for(int j = 0; j < this.height; j++){
+					this.oponentGrid[i][j] = new Square(i,j);
+				}
+			}
+		}
+		
+		public abstract int[] newShot();
+		
+		public abstract void shipPlacement();
+		
+		public String getName(){
+			return this.name;
+		}
+		
+		public int getWidth(){
+			return this.width;
+		}
+		
+		public int getHeight(){
+			return this.height;
+		}
+	}

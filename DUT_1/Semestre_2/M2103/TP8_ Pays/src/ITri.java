@@ -1,0 +1,8 @@
+	/**
+	 * 
+	 */
+	interface ITri{
+
+		void trier();
+
+	}

@@ -1,0 +1,33 @@
+procedure ordre(par_ref tableau_de entier valeur, entier i)
+var
+	entier j;
+	entier tmp;
+debut
+	j := 0;
+	tantque(j<>i)
+		si (valeur[i] < valeur[j])
+			tmp := valeur[i];
+			valeur[i] := valeur[j];
+			valeur[j] := tmp;
+		finsi
+		j := j+1;
+	fintantque
+fin
+
+procedure testOrdre()
+var
+	entier LG_TAB := 4;
+	tableau_de entier valeur[LG_TAB];
+	entier i;
+debut
+	valeur[0] := 1;
+	valeur[1] := 2;
+	valeur[2] := 4;
+	valeur[3] := 3;
+	
+	ordre(@valeur,3);
+	
+	pour i := 0 à 3 pas 1
+		afficher(valeur[i] + " ");
+	finpour
+fin

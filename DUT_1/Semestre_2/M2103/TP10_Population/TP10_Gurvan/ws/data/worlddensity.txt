@@ -1,0 +1,238 @@
+Papua New Guinea     12.82
+Cambodia     78.67
+Kazakhstan     5.65
+Paraguay     16.79
+Syria     106.64
+Solomon Islands     20.43
+Holy See (Vatican City) -     0.01
+Montserrat     94.49
+Mali     9.94
+Marshall Islands     349.03
+Panama     42.11
+Laos     28.2
+Argentina     14.7
+Virgin Islands     56.65
+Seychelles     180.76
+Belize     13.12
+Zambia     15.51
+Bahrain     1080.16
+Guinea-Bissau     41.62
+Namibia     2.53
+Comoros     337.22
+Faroe Islands     34.79
+Finland     15.51
+Netherlands Antilles     234.76
+Georgia     66.44
+Saint Kitts and Nevis     151.8
+Yemen     43.59
+Eritrea     41.45
+Puerto Rico     287.03
+Aruba     526.12
+Madagascar     34.14
+Libya     3.51
+Saint Martin     544.0
+Sweden     20.1
+West Bank     445.72
+Cocos (Keeling) Islands     42.57
+Malawi     117.59
+Andorra     154.73
+Liechtenstein     215.61
+Poland     123.13
+Svalbard     0.04
+Bulgaria     65.48
+Jordan     67.16
+Tunisia     63.47
+Gambia, The     153.58
+Tuvalu     468.35
+United Arab Emirates     55.28
+Kenya     65.14
+French Polynesia     67.92
+Brunei     66.1
+Djibouti     22.01
+Lebanon     381.92
+Azerbaijan     94.43
+Cuba     103.05
+Czech Republic     129.6
+Mauritania     3.26
+Saint Lucia     280.66
+Guernsey     842.64
+European Union     113.54
+Mayotte     578.36
+Israel     342.43
+San Marino     491.36
+Australia     2.68
+Tajikistan     50.4
+Cameroon     38.84
+Gibraltar     4000.29
+Cyprus     85.69
+Northern Mariana Islands     181.58
+Malaysia     76.65
+Dhekelia     119.85
+Iceland     2.96
+Oman     15.59
+Armenia     99.62
+Gabon     5.55
+Luxembourg     187.94
+Brazil     22.55
+Turks and Caicos Islands     51.98
+Algeria     14.18
+Jersey     789.08
+Slovenia     99.03
+Antigua and Barbuda     157.66
+Colombia     39.52
+Ecuador     49.12
+Moldova     127.78
+Akrotiri     127.64
+Vanuatu     17.66
+Honduras     68.15
+Italy     193.03
+Nauru     655.71
+Korea, North     194.78
+Haiti     321.61
+Afghanistan     50.56
+Burundi     312.29
+Singapore     6649.59
+American Samoa     288.92
+Christmas Island     10.39
+Russia     8.24
+Netherlands     400.84
+China     138.59
+Saint Pierre and Miquelon     29.11
+Kyrgyzstan     26.99
+Bhutan     14.52
+Romania     93.67
+Togo     103.17
+Philippines     308.94
+Cote d'Ivoire     56.98
+Uzbekistan     63.18
+Bahamas, The     22.06
+British Virgin Islands     156.89
+Zimbabwe     31.7
+Montenegro     48.35
+Dominica     96.17
+Indonesia     123.74
+Benin     73.65
+Angola     10.05
+Sudan     16.05
+Portugal     115.56
+New Caledonia     11.8
+Grenada     262.63
+Cayman Islands     182.68
+Greece     81.27
+Latvia     34.76
+Mongolia     1.92
+Iran     39.97
+Morocco     76.91
+Guatemala     119.41
+Guyana     3.59
+Iraq     64.57
+Chile     21.74
+Nepal     200.56
+Isle of Man     133.25
+Tanzania     42.55
+Ukraine     76.19
+Ghana     97.65
+Anguilla     138.31
+India     349.19
+Canada     3.33
+Maldives     1263.91
+Turkey     92.1
+Belgium     340.8
+Taiwan     637.05
+South Africa     35.89
+Trinidad and Tobago     204.24
+Bermuda     1255.4
+Central African Republic     7.12
+Jamaica     255.15
+Peru     22.7
+Turkmenistan     10.61
+Germany     230.71
+Fiji     51.0
+Tokelau     143.3
+Hong Kong     6427.32
+Guinea     41.53
+United States     30.92
+Micronesia, Federated States of     153.37
+Chad     7.87
+Somalia     14.99
+Sao Tome and Principe     205.97
+Pitcairn Islands     1.02
+Thailand     127.42
+Equatorial Guinea     21.98
+Kiribati     136.07
+Costa Rica     82.11
+Vietnam     261.31
+Congo, Democratic Republic of the     28.36
+Falkland Islands (Islas Malvinas)     0.26
+Kuwait     145.72
+Nigeria     149.69
+Croatia     79.44
+Cook Islands     92.5
+Sri Lanka     322.04
+Uruguay     19.74
+Timor-Leste     73.88
+United Kingdom     248.93
+Switzerland     183.62
+Samoa     73.74
+Spain     80.21
+Liberia     29.94
+Venezuela     28.96
+Burkina Faso     55.67
+Swaziland     65.01
+Palau     46.05
+Estonia     28.91
+Gaza Strip     4270.19
+Wallis and Futuna     60.03
+Niue     5.55
+Austria     97.84
+Mozambique     26.55
+El Salvador     335.86
+Monaco     16398.0
+Guam     325.1
+Lesotho     70.11
+Tonga     159.1
+Western Sahara     1.48
+Hungary     106.75
+Japan     336.89
+Belarus     46.66
+Mauritius     624.6
+Albania     125.91
+Norfolk Island     60.8
+New Zealand     15.53
+Senegal     65.51
+Macedonia     81.37
+Ethiopia     69.43
+Congo, Republic of the     11.41
+Korea, South     499.93
+Egypt     81.6
+Macau     16457.96
+Sierra Leone     87.74
+Bolivia     8.42
+Malta     1277.0
+Saudi Arabia     13.1
+Cape Verde     105.88
+Pakistan     208.67
+Kosovo     195.34
+Ireland     59.14
+Qatar     81.2
+Slovakia     111.69
+France     99.56
+Lithuania     54.68
+Serbia     131.13
+Bosnia and Herzegovina     89.78
+Niger     10.48
+Rwanda     386.74
+Burma     70.39
+Bangladesh     1066.3
+Barbados     654.22
+Nicaragua     44.68
+Norway     14.34
+Botswana     3.07
+Saint Vincent and the Grenadines     304.45
+Denmark     127.27
+Dominican Republic     195.1
+Mexico     55.74
+Uganda     132.89
+Suriname     2.92
+Greenland     0.03
+Saint Helena     18.4

@@ -1,0 +1,26 @@
+package battle;
+
+/**
+ * 
+ * @author Samuel
+ * @version
+ */
+public interface IGame {
+
+	/**
+	 * 
+	 * @return
+	 */
+	public String description();
+	
+	/**
+	 * 
+	 */
+	public void start();
+	
+	/**
+	 * 
+	 */
+	public void endOfGame();
+	
+}

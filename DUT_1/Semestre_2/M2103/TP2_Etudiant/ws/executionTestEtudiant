@@ -1,0 +1,126 @@
+================================== Test of the class Etudiant ================================== 
+
+
+
+================= Test of the method Etudiant and initialisation ================= 
+
+
+--------- All the errors cases
+When param nom = null
+The informations are not correct
+OK
+When param n = 0
+The informations are not correct
+OK
+
+
+--------- All the limits cases
+There is no limits cases
+
+
+--------- All the normals cases
+OK
+
+
+
+================= Test of the method getNom ================= 
+
+
+--------- All the errors cases
+There is no errors cases
+
+
+--------- All the limits cases
+There is no limits cases
+
+
+--------- All the normals cases
+OK
+
+
+
+================= Test of the method setNom ================= 
+
+
+--------- All the errors cases
+OK
+
+
+--------- All the limits cases
+There is no limits cases
+
+
+--------- All the normals cases
+OK
+
+
+
+================= Test of the method getNbNotes ================= 
+
+
+--------- All the errors cases
+There is no errors cases. You can't create an object Etudiant with 0 marks
+
+
+--------- All the limits cases
+There is no limits cases
+
+
+--------- All the normals cases
+OK
+
+
+
+================= Test of the method getUneNote ================= 
+
+
+--------- All the errors cases
+When param i < 0
+the param i or the table is false
+OK
+When param i > notes.length
+the param i or the table is false
+OK
+
+
+--------- All the limits cases
+There is no limits cases
+
+
+--------- All the normals cases
+OK
+
+
+
+================= Test of the method moyenne ================= 
+
+
+--------- All the errors cases
+There is no errors cases. You can't create an object Etudiant with 0 marks
+
+
+--------- All the limits cases
+There is no limits cases
+
+
+--------- All the normals cases
+OK
+
+
+
+================= Test of the method toString ================= 
+
+
+--------- All the errors cases
+There is no errors cases. You can't create an object Etudiant with 0 marks
+
+
+--------- All the limits cases
+There is no limits cases
+
+
+--------- All the normals cases
+OK
+Result : 12 test done
+Result : 12 test OK
+Result : 100 % of success

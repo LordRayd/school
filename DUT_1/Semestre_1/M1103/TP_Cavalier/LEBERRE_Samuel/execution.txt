@@ -1,0 +1,135 @@
+15      26      23      34      29      10      
+
+
+35      30      11      16      25      2      
+
+
+17      22      33      28      9      4      
+
+
+27      14      19      24      1      6      
+
+
+31      36      7      12      3      20      
+
+
+13      18      21      32      5      8      
+
+
+=========================== Test de la methode afficherDamier ===============================
+
+--------- Test les cas normaux
+15      26      23      34      29      10      
+
+
+35      30      11      16      25      2      
+
+
+17      22      33      28      9      4      
+
+
+27      14      19      24      1      6      
+
+
+31      36      7      12      3      20      
+
+
+13      18      21      32      5      8      
+
+
+
+--------- Test tous les cas d'erreurs
+On ne peut pas tester les cas d'erreurs
+Car cela implique de modifier le damier
+
+
+
+=========================== Test de la methode estCeValide ===============================
+
+
+--------- Test tous les cas d'erreurs
+
+--- Test newX < 0
+Le résultat est false
+
+--- Test newX > TAILLE_ECHEC
+Le résultat est false
+
+--- Test newY < 0
+Le résultat est false
+
+--- Test newY > TAILLE_ECHEC
+Le résultat est false
+
+--- Test case[newX][newY] déja visité
+Le résultat est false
+
+
+--------- Test tous les cas limites ------ 
+
+--- Test newX = 0
+Le résultat est false
+
+--- Test newX = TAILLE_ECHEC-1
+Le résultat est false
+
+--- Test newY = 0
+Le résultat est false
+
+--- Test newY = TAILLE_ECHEC-1
+Le résultat est false
+
+
+--------- Test les cas normaux
+Le résultat est false
+Le résultat est false
+
+
+
+=========================== Test de la methode donnerSuivants ===============================
+
+
+--------- Test les cas normaux
+Pour posX = 4 et posY = 5
+2    6
+
+3    8
+
+5    8
+
+7    6
+
+7    4
+
+5    2
+
+3    2
+
+1    4
+
+
+
+
+=========================== Test de la methode essayer ===============================
+
+
+--------- Test les cas normaux
+Test vrai
+11      26      19      8      1      16      
+
+
+7      34      15      10      27      18      
+
+
+25      30      23      4      35      14      
+
+
+33      12      9      20      17      2      
+
+
+21      6      3      32      13      28      
+
+
+31      24      29      22      5      36      
+
+
