@@ -1,0 +1,362 @@
+ 	GBL 	100
+ 14  100;  	GBL 	100
+ 	JMP 	L0:
+ 21  258;  	JMP 	L0:
+L1: 	NOP 	
+  0     ; L1: 	NOP 	
+ 	INC 	2
+ 12    2;  	INC 	2
+ 	RCV 	
+  7     ;  	RCV 	
+ 	LLA 	1
+ 19    1;  	LLA 	1
+ 	STI 	
+  9     ;  	STI 	
+L4: 	NOP 	
+  0     ; L4: 	NOP 	
+ 	LDC 	0
+ 11    0;  	LDC 	0
+ 	LLA 	0
+ 19    0;  	LLA 	0
+ 	STI 	
+  9     ;  	STI 	
+L5: 	NOP 	
+  0     ; L5: 	NOP 	
+L7: 	NOP 	
+  0     ; L7: 	NOP 	
+ 	LDL 	0
+ 15    0;  	LDL 	0
+ 	LDL 	1
+ 15    1;  	LDL 	1
+ 	SUB 	
+  2     ;  	SUB 	
+ 	JGZ 	L6:
+ 22   50;  	JGZ 	L6:
+ 	JMP 	L8:
+ 21   28;  	JMP 	L8:
+L8: 	NOP 	
+  0     ; L8: 	NOP 	
+ 	RCV 	
+  7     ;  	RCV 	
+ 	LDL 	0
+ 15    0;  	LDL 	0
+ 	LDC 	1
+ 11    1;  	LDC 	1
+ 	MUL 	
+  3     ;  	MUL 	
+ 	LGA 	0
+ 20    0;  	LGA 	0
+ 	ADD 	
+  1     ;  	ADD 	
+ 	STI 	
+  9     ;  	STI 	
+L9: 	NOP 	
+  0     ; L9: 	NOP 	
+ 	LDL 	0
+ 15    0;  	LDL 	0
+ 	LDC 	1
+ 11    1;  	LDC 	1
+ 	ADD 	
+  1     ;  	ADD 	
+ 	LLA 	0
+ 19    0;  	LLA 	0
+ 	STI 	
+  9     ;  	STI 	
+ 	JMP 	L7:
+ 21   18;  	JMP 	L7:
+L6: 	NOP 	
+  0     ; L6: 	NOP 	
+ 	LDL 	1
+ 15    1;  	LDL 	1
+ 	STL 	-3
+ 16   -3;  	STL 	-3
+ 	JMP 	L2:
+ 21   59;  	JMP 	L2:
+L3: 	DEC 	2
+ 13    2; L3: 	DEC 	2
+L2: 	RET 	0
+ 25    0; L2: 	RET 	0
+L10: 	NOP 	
+  0     ; L10: 	NOP 	
+ 	INC 	1
+ 12    1;  	INC 	1
+ 	LDL 	-4
+ 15   -4;  	LDL 	-4
+ 	LDC 	1
+ 11    1;  	LDC 	1
+ 	MUL 	
+  3     ;  	MUL 	
+ 	LGA 	0
+ 20    0;  	LGA 	0
+ 	ADD 	
+  1     ;  	ADD 	
+ 	LDI 	
+  8     ;  	LDI 	
+ 	LLA 	0
+ 19    0;  	LLA 	0
+ 	STI 	
+  9     ;  	STI 	
+L13: 	NOP 	
+  0     ; L13: 	NOP 	
+ 	LDL 	-3
+ 15   -3;  	LDL 	-3
+ 	LDC 	1
+ 11    1;  	LDC 	1
+ 	MUL 	
+  3     ;  	MUL 	
+ 	LGA 	0
+ 20    0;  	LGA 	0
+ 	ADD 	
+  1     ;  	ADD 	
+ 	LDI 	
+  8     ;  	LDI 	
+ 	LDL 	-4
+ 15   -4;  	LDL 	-4
+ 	LDC 	1
+ 11    1;  	LDC 	1
+ 	MUL 	
+  3     ;  	MUL 	
+ 	LGA 	0
+ 20    0;  	LGA 	0
+ 	ADD 	
+  1     ;  	ADD 	
+ 	STI 	
+  9     ;  	STI 	
+L14: 	NOP 	
+  0     ; L14: 	NOP 	
+ 	LDL 	0
+ 15    0;  	LDL 	0
+ 	LDL 	-3
+ 15   -3;  	LDL 	-3
+ 	LDC 	1
+ 11    1;  	LDC 	1
+ 	MUL 	
+  3     ;  	MUL 	
+ 	LGA 	0
+ 20    0;  	LGA 	0
+ 	ADD 	
+  1     ;  	ADD 	
+ 	STI 	
+  9     ;  	STI 	
+L12: 	DEC 	1
+ 13    1; L12: 	DEC 	1
+L11: 	RET 	2
+ 25    2; L11: 	RET 	2
+L15: 	NOP 	
+  0     ; L15: 	NOP 	
+ 	INC 	1
+ 12    1;  	INC 	1
+ 	LDC 	0
+ 11    0;  	LDC 	0
+ 	LLA 	0
+ 19    0;  	LLA 	0
+ 	STI 	
+  9     ;  	STI 	
+L18: 	NOP 	
+  0     ; L18: 	NOP 	
+L19: 	NOP 	
+  0     ; L19: 	NOP 	
+ 	LDL 	0
+ 15    0;  	LDL 	0
+ 	LDL 	-3
+ 15   -3;  	LDL 	-3
+ 	LDC 	1
+ 11    1;  	LDC 	1
+ 	SUB 	
+  2     ;  	SUB 	
+ 	SUB 	
+  2     ;  	SUB 	
+ 	JGZ 	L16:
+ 22  211;  	JGZ 	L16:
+ 	JMP 	L20:
+ 21  133;  	JMP 	L20:
+L20: 	NOP 	
+  0     ; L20: 	NOP 	
+ 	INC 	1
+ 12    1;  	INC 	1
+ 	LDL 	0
+ 15    0;  	LDL 	0
+ 	LLA 	1
+ 19    1;  	LLA 	1
+ 	STI 	
+  9     ;  	STI 	
+L22: 	NOP 	
+  0     ; L22: 	NOP 	
+L24: 	NOP 	
+  0     ; L24: 	NOP 	
+ 	LDL 	1
+ 15    1;  	LDL 	1
+ 	LDL 	-3
+ 15   -3;  	LDL 	-3
+ 	SUB 	
+  2     ;  	SUB 	
+ 	JGZ 	L23:
+ 22  196;  	JGZ 	L23:
+ 	JMP 	L25:
+ 21  152;  	JMP 	L25:
+L25: 	NOP 	
+  0     ; L25: 	NOP 	
+ 	LDL 	1
+ 15    1;  	LDL 	1
+ 	LDC 	1
+ 11    1;  	LDC 	1
+ 	MUL 	
+  3     ;  	MUL 	
+ 	LGA 	0
+ 20    0;  	LGA 	0
+ 	ADD 	
+  1     ;  	ADD 	
+ 	LDI 	
+  8     ;  	LDI 	
+ 	LDL 	0
+ 15    0;  	LDL 	0
+ 	LDC 	1
+ 11    1;  	LDC 	1
+ 	MUL 	
+  3     ;  	MUL 	
+ 	LGA 	0
+ 20    0;  	LGA 	0
+ 	ADD 	
+  1     ;  	ADD 	
+ 	LDI 	
+  8     ;  	LDI 	
+ 	SUB 	
+  2     ;  	SUB 	
+ 	JGZ 	L26:
+ 22  185;  	JGZ 	L26:
+ 	JMP 	L27:
+ 21  176;  	JMP 	L27:
+L27: 	NOP 	
+  0     ; L27: 	NOP 	
+ 	INC 	1
+ 12    1;  	INC 	1
+ 	LDL 	0
+ 15    0;  	LDL 	0
+ 	LDL 	1
+ 15    1;  	LDL 	1
+ 	JSR 	L10:
+ 24   61;  	JSR 	L10:
+L26: 	NOP 	
+  0     ; L26: 	NOP 	
+ 	LDL 	1
+ 15    1;  	LDL 	1
+ 	LDC 	1
+ 11    1;  	LDC 	1
+ 	ADD 	
+  1     ;  	ADD 	
+ 	LLA 	1
+ 19    1;  	LLA 	1
+ 	STI 	
+  9     ;  	STI 	
+ 	JMP 	L24:
+ 21  142;  	JMP 	L24:
+L23: 	NOP 	
+  0     ; L23: 	NOP 	
+ 	LDL 	0
+ 15    0;  	LDL 	0
+ 	LDC 	1
+ 11    1;  	LDC 	1
+ 	ADD 	
+  1     ;  	ADD 	
+ 	LLA 	0
+ 19    0;  	LLA 	0
+ 	STI 	
+  9     ;  	STI 	
+L21: 	DEC 	1
+ 13    1; L21: 	DEC 	1
+ 	JMP 	L19:
+ 21  120;  	JMP 	L19:
+L17: 	DEC 	1
+ 13    1; L17: 	DEC 	1
+L16: 	RET 	1
+ 25    1; L16: 	RET 	1
+L28: 	NOP 	
+  0     ; L28: 	NOP 	
+ 	INC 	1
+ 12    1;  	INC 	1
+ 	LDC 	0
+ 11    0;  	LDC 	0
+ 	LLA 	0
+ 19    0;  	LLA 	0
+ 	STI 	
+  9     ;  	STI 	
+L31: 	NOP 	
+  0     ; L31: 	NOP 	
+L32: 	NOP 	
+  0     ; L32: 	NOP 	
+ 	LDL 	0
+ 15    0;  	LDL 	0
+ 	LDL 	-3
+ 15   -3;  	LDL 	-3
+ 	SUB 	
+  2     ;  	SUB 	
+ 	JGZ 	L29:
+ 22  256;  	JGZ 	L29:
+ 	JMP 	L33:
+ 21  232;  	JMP 	L33:
+L33: 	NOP 	
+  0     ; L33: 	NOP 	
+ 	LDL 	0
+ 15    0;  	LDL 	0
+ 	LDC 	1
+ 11    1;  	LDC 	1
+ 	MUL 	
+  3     ;  	MUL 	
+ 	LGA 	0
+ 20    0;  	LGA 	0
+ 	ADD 	
+  1     ;  	ADD 	
+ 	LDI 	
+  8     ;  	LDI 	
+ 	SND 	
+  6     ;  	SND 	
+L34: 	NOP 	
+  0     ; L34: 	NOP 	
+ 	LDL 	0
+ 15    0;  	LDL 	0
+ 	LDC 	1
+ 11    1;  	LDC 	1
+ 	ADD 	
+  1     ;  	ADD 	
+ 	LLA 	0
+ 19    0;  	LLA 	0
+ 	STI 	
+  9     ;  	STI 	
+ 	JMP 	L32:
+ 21  222;  	JMP 	L32:
+L30: 	DEC 	1
+ 13    1; L30: 	DEC 	1
+L29: 	RET 	1
+ 25    1; L29: 	RET 	1
+L0: 	NOP 	
+  0     ; L0: 	NOP 	
+ 	INC 	1
+ 12    1;  	INC 	1
+ 	INC 	1
+ 12    1;  	INC 	1
+ 	JSR 	L1:
+ 24    4;  	JSR 	L1:
+ 	LLA 	0
+ 19    0;  	LLA 	0
+ 	STI 	
+  9     ;  	STI 	
+L37: 	NOP 	
+  0     ; L37: 	NOP 	
+ 	INC 	1
+ 12    1;  	INC 	1
+ 	LDL 	0
+ 15    0;  	LDL 	0
+ 	JSR 	L15:
+ 24  111;  	JSR 	L15:
+L38: 	NOP 	
+  0     ; L38: 	NOP 	
+ 	INC 	1
+ 12    1;  	INC 	1
+ 	LDL 	0
+ 15    0;  	LDL 	0
+ 	JSR 	L28:
+ 24  213;  	JSR 	L28:
+L36: 	DEC 	1
+ 13    1; L36: 	DEC 	1
+L35: 	HLT 	
+ 10     ; L35: 	HLT 	

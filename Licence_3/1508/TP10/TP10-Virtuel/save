@@ -1,0 +1,70 @@
+# fichier makefile
+RPGSDIR =./src
+RPGTDIR =./test
+RPGBSDIR =./build/src
+RPGBTDIR=./build/test
+
+INCLUDESRC=String.o Damageable.o Item.o Creature.o IntegerItem.o IntegerValue.o Dice.o Race.o Weapon.o CraftedWeapon.o
+INCLUDEALLSRC=./build/src/*.o
+INCLUDEALLTEST=./build/test/*.o
+
+
+all : clean mkbuild Run
+
+RPGSRC : main.o
+	$(RPGBSDIR)/main.o
+main.o	: String.o Damageable.o Item.o Creature.o IntegerItem.o IntegerValue.o Dice.o Race.o Weapon.o CraftedWeapon.o
+	g++ $(RPGSDIR)/main.cpp $(INCLUDEALLSRC) -o $(RPGBSDIR)/main.o
+String.o	:
+	g++ -c $(RPGSDIR)/String.cpp -o $(RPGBSDIR)/String.o
+Damageable.o : String.o
+	g++ -c  $(RPGSDIR)/Damageable.cpp -o $(RPGBSDIR)/Damageable.o
+Item.o : String.o Damageable.o
+	g++ -c $(RPGSDIR)/Item.cpp -o $(RPGBSDIR)/Item.o
+Creature.o : String.o Damageable.o
+	g++ -c $(RPGSDIR)/Creature.cpp -o $(RPGBSDIR)/Creature.o
+IntegerItem.o :
+	g++ -c $(RPGSDIR)/IntegerItem.cpp -o $(RPGBSDIR)/IntegerItem.o
+IntegerValue.o : IntegerItem.o
+	g++ -c $(RPGSDIR)/IntegerValue.cpp -o $(RPGBSDIR)/IntegerValue.o
+Dice.o : IntegerItem.o
+	g++ -c $(RPGSDIR)/Dice.cpp -o $(RPGBSDIR)/Dice.o
+Race.o : IntegerItem.o IntegerValue.o
+	g++ -c $(RPGSDIR)/Race.cpp -o $(RPGBSDIR)/Race.o
+Weapon.o : IntegerItem.o
+	g++ -c $(RPGSDIR)/Weapon.cpp -o $(RPGBSDIR)/Weapon.o
+CraftedWeapon.o : Weapon.o Item.o
+	g++ -c $(RPGSDIR)/CraftedWeapon.cpp -o $(RPGBSDIR)/CraftedWeapon.o
+
+RPGTEST : testMain.o
+	$(RPGBTDIR)/main.o
+testMain.o : $(INCLUDESRC) testString.o  testDamageable.o testIntegerValue.o testDice.o testItem.o testWeapon.o testCraftedWeapon.o testRace.o testCreature.o
+	g++ -std=c++11 $(RPGTDIR)/main.cpp  $(INCLUDEALLTEST) -o $(RPGBTDIR)/main.o
+testCraftedWeapon.o : CraftedWeapon.o
+	g++ -std=c++11 -c $(RPGBSDIR)/Dice.o $(RPGTDIR)/testCraftedWeapon.cpp -o $(RPGBTDIR)/testCraftedWeapon.o
+testCreature.o : Creature.o
+	g++ -std=c++11 -c $(RPGTDIR)/testCreature.cpp -o $(RPGBTDIR)/testCreature.o
+testDamageable.o : String.o Damageable.o
+	g++ -std=c++11 -c $(RPGTDIR)/testDamageable.cpp -o $(RPGBTDIR)/testDamageable.o
+testDice.o : Dice.o
+	g++ -std=c++11 -c $(RPGTDIR)/testDice.cpp -o $(RPGBTDIR)/testDice.o
+testIntegerValue.o : IntegerValue.o
+	g++ -std=c++11 -c $(RPGTDIR)/testIntegerValue.cpp -o $(RPGBTDIR)/testIntegerValue.o
+testItem.o : Damageable.o Item.o
+	g++ -std=c++11 -c $(RPGTDIR)/testItem.cpp -o $(RPGBTDIR)/testItem.o
+testRace.o : IntegerValue.o Race.o
+	g++ -std=c++11 -c $(RPGBSDIR)/IntegerValue.o $(RPGTDIR)/testRace.cpp -o $(RPGBTDIR)/testRace.o
+testString.o : String.o
+	g++ -std=c++11 -c $(RPGTDIR)/testString.cpp -o $(RPGBTDIR)/testString.o
+testWeapon.o : IntegerValue.o Weapon.o
+	g++ -std=c++11 -c $(RPGTDIR)/testWeapon.cpp -o $(RPGBTDIR)/testWeapon.o
+
+mkbuild :
+	mkdir -p build;
+	mkdir -p $(RPGBSDIR);
+	mkdir -p $(RPGBTDIR);
+Run	: RPGSRC RPGTEST
+clean	:
+	rm -Rf build
+
+

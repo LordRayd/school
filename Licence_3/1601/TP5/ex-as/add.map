@@ -1,0 +1,32 @@
+ 	GBL 	2
+ 14    2;  	GBL 	2
+ 	JMP 	L0:
+ 21    4;  	JMP 	L0:
+L0: 	NOP 	
+  0     ; L0: 	NOP 	
+ 	RCV 	
+  7     ;  	RCV 	
+ 	LGA 	0
+ 20    0;  	LGA 	0
+ 	STI 	
+  9     ;  	STI 	
+L2: 	NOP 	
+  0     ; L2: 	NOP 	
+ 	RCV 	
+  7     ;  	RCV 	
+ 	LGA 	1
+ 20    1;  	LGA 	1
+ 	STI 	
+  9     ;  	STI 	
+L3: 	NOP 	
+  0     ; L3: 	NOP 	
+ 	LDG 	0
+ 17    0;  	LDG 	0
+ 	LDG 	1
+ 17    1;  	LDG 	1
+ 	ADD 	
+  1     ;  	ADD 	
+ 	SND 	
+  6     ;  	SND 	
+L1: 	HLT 	
+ 10     ; L1: 	HLT 	

@@ -1,0 +1,16 @@
+digraph G {
+program -> A1 [label="(1)\prg"];
+program -> statement_list -> read1 -> A2 [label="(2)\nent"];
+statement_list -> read2 -> A3 [label="(3)\nent"];
+statement_list -> while -> A15 [label="not_equal\nbool"] -> A4 [label="(2)\nent"];
+A15 -> A5 [label="(3)\nent"];
+statement_list -> writeln -> A6 [label="(2)\nent"];
+while -> if -> greater -> A7 [[label="(2)\nent"];
+A16 [label="greater\nbool"] -> A8 [label="(3)\nent"];
+if -> assign1 -> A9 [label="(2)\nent"];
+assign1 -> A17 [label="sub\nent"] -> A10 [label="(2)\nent"];
+A17 -> A11 [label="(3)\nent"];
+if -> assign2 -> A12 [label="(3)\nent"];
+assign2 -> A18 [label="sub\nent"] -> A13 [label="(3)\nent"];
+A18 -> A14 [label="(2)\nent"];
+}

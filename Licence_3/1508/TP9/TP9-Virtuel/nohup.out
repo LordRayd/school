@@ -1,0 +1,8 @@
+bash: impossible de régler le groupe de processus du terminlal (-1): Ioctl() inappropré pour un périphérique
+bash: pas de contrôle de tâche dans ce shell
+Gtk-Message: GtkDialog mapped without a transient parent. This is discouraged.
+Attempting to call a function in a renderer window that has been closed or released.
+Function provided here: worker-manager.js:322:32
+Remote event names: destroyed, crashed
+bash: impossible de régler le groupe de processus du terminlal (-1): Ioctl() inappropré pour un périphérique
+bash: pas de contrôle de tâche dans ce shell

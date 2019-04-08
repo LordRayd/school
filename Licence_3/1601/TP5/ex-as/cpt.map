@@ -1,0 +1,48 @@
+ 	GBL 	1
+ 14    1;  	GBL 	1
+ 	JMP 	L0:
+ 21    4;  	JMP 	L0:
+L0: 	NOP 	
+  0     ; L0: 	NOP 	
+ 	LDC 	0
+ 11    0;  	LDC 	0
+ 	LGA 	0
+ 20    0;  	LGA 	0
+ 	STI 	
+  9     ;  	STI 	
+L2: 	NOP 	
+  0     ; L2: 	NOP 	
+L3: 	NOP 	
+  0     ; L3: 	NOP 	
+ 	LDG 	0
+ 17    0;  	LDG 	0
+ 	LDC 	10
+ 11   10;  	LDC 	10
+ 	SUB 	
+  2     ;  	SUB 	
+ 	JNZ 	L4:
+ 23   21;  	JNZ 	L4:
+ 	JMP 	L1:
+ 21   36;  	JMP 	L1:
+L4: 	NOP 	
+  0     ; L4: 	NOP 	
+ 	LDG 	0
+ 17    0;  	LDG 	0
+ 	SND 	
+  6     ;  	SND 	
+L5: 	NOP 	
+  0     ; L5: 	NOP 	
+ 	LDG 	0
+ 17    0;  	LDG 	0
+ 	LDC 	1
+ 11    1;  	LDC 	1
+ 	ADD 	
+  1     ;  	ADD 	
+ 	LGA 	0
+ 20    0;  	LGA 	0
+ 	STI 	
+  9     ;  	STI 	
+ 	JMP 	L3:
+ 21   11;  	JMP 	L3:
+L1: 	HLT 	
+ 10     ; L1: 	HLT 	

@@ -1,0 +1,20 @@
+digraph H{
+    A -> B [label=" Chiffre 1 "]
+    B -> G [label=" Chiffre 2 et 3 "]
+    G -> D[label=" Operateur "]
+    G-> H [label=" Chiffre 1 "]
+    H -> I [label=" Operateur "]
+    I -> D [label=" Operateur "]
+}
+
+digraph H{
+    A -> B [label=" Chiffre 1 "]
+    B -> C [label=" Chiffre 2 "]
+    C -> D [label=" Operateur "]
+    B -> E [label=" Chiffre 3 "]
+    E -> F [label=" Chiffre 4 "]
+    F -> C [label=" Operateur "]
+    C -> E [label=" Chiffre 5 "]
+    { rank=same; A B C D }
+    { rank=same; E F }
+}
