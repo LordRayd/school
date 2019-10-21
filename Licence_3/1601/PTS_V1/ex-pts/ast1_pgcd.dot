@@ -1,0 +1,216 @@
+digraph ast1_pgcd {
+size="20,20"
+node [shape=plaintext]
+edge [dir=none]
+n70 [label="program"]
+n0 [label="new_ident:pgcd"]
+
+n70 -> n0;
+n46 [label="fct_decl_list"]
+n45 [label="fct_decl"]
+n1 [label="new_ident:gcd"]
+
+n45 -> n1;
+n8 [label="param_decl_list"]
+n4 [label="param_decl"]
+n2 [label="new_ident:a"]
+
+n4 -> n2;
+n3 [label="int_type"]
+
+n4 -> n3;
+
+n8 -> n4;
+n7 [label="param_decl"]
+n5 [label="new_ident:b"]
+
+n7 -> n5;
+n6 [label="int_type"]
+
+n7 -> n6;
+
+n8 -> n7;
+
+n45 -> n8;
+n9 [label="int_type"]
+
+n45 -> n9;
+n44 [label="compound"]
+n43 [label="stm_list"]
+n39 [label="while"]
+n14 [label="not_equal"]
+n11 [label="var"]
+n10 [label="ident:a"]
+
+n11 -> n10;
+
+n14 -> n11;
+n13 [label="var"]
+n12 [label="ident:b"]
+
+n13 -> n12;
+
+n14 -> n13;
+
+n39 -> n14;
+n38 [label="compound"]
+n37 [label="stm_list"]
+n36 [label="if"]
+n19 [label="greater"]
+n16 [label="var"]
+n15 [label="ident:a"]
+
+n16 -> n15;
+
+n19 -> n16;
+n18 [label="var"]
+n17 [label="ident:b"]
+
+n18 -> n17;
+
+n19 -> n18;
+
+n36 -> n19;
+n27 [label="assign"]
+n21 [label="var"]
+n20 [label="ident:a"]
+
+n21 -> n20;
+
+n27 -> n21;
+n26 [label="minus"]
+n23 [label="var"]
+n22 [label="ident:a"]
+
+n23 -> n22;
+
+n26 -> n23;
+n25 [label="var"]
+n24 [label="ident:b"]
+
+n25 -> n24;
+
+n26 -> n25;
+
+n27 -> n26;
+
+n36 -> n27;
+n35 [label="assign"]
+n29 [label="var"]
+n28 [label="ident:b"]
+
+n29 -> n28;
+
+n35 -> n29;
+n34 [label="minus"]
+n31 [label="var"]
+n30 [label="ident:b"]
+
+n31 -> n30;
+
+n34 -> n31;
+n33 [label="var"]
+n32 [label="ident:a"]
+
+n33 -> n32;
+
+n34 -> n33;
+
+n35 -> n34;
+
+n36 -> n35;
+
+n37 -> n36;
+
+n38 -> n37;
+
+n39 -> n38;
+
+n43 -> n39;
+n42 [label="return"]
+n41 [label="var"]
+n40 [label="ident:a"]
+
+n41 -> n40;
+
+n42 -> n41;
+
+n43 -> n42;
+
+n44 -> n43;
+
+n45 -> n44;
+
+n46 -> n45;
+
+n70 -> n46;
+n69 [label="compound"]
+n53 [label="var_decl_list"]
+n49 [label="var_decl"]
+n47 [label="new_ident:x"]
+
+n49 -> n47;
+n48 [label="int_type"]
+
+n49 -> n48;
+
+n53 -> n49;
+n52 [label="var_decl"]
+n50 [label="new_ident:y"]
+
+n52 -> n50;
+n51 [label="int_type"]
+
+n52 -> n51;
+
+n53 -> n52;
+
+n69 -> n53;
+n68 [label="stm_list"]
+n56 [label="read"]
+n55 [label="var"]
+n54 [label="ident:x"]
+
+n55 -> n54;
+
+n56 -> n55;
+
+n68 -> n56;
+n59 [label="read"]
+n58 [label="var"]
+n57 [label="ident:y"]
+
+n58 -> n57;
+
+n59 -> n58;
+
+n68 -> n59;
+n67 [label="write"]
+n66 [label="fct_call"]
+n60 [label="ident:gcd"]
+
+n66 -> n60;
+n65 [label="arg_list"]
+n62 [label="var"]
+n61 [label="ident:x"]
+
+n62 -> n61;
+
+n65 -> n62;
+n64 [label="var"]
+n63 [label="ident:y"]
+
+n64 -> n63;
+
+n65 -> n64;
+
+n66 -> n65;
+
+n67 -> n66;
+
+n68 -> n67;
+
+n69 -> n68;
+
+n70 -> n69;
+}
