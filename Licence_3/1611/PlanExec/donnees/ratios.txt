@@ -1,0 +1,45 @@
+// OPTIMISATION DE LA MEMOIRE - SHARED POOL AREA : ZONE LC
+
+
+select namespace, pins, reloads from v$librarycache ;    
+           
+
+select sum(reloads)*100/sum(pins) "Pin Ratio, en %" 
+from v$librarycache ;
+
+
+
+// OPTIMISATION DE LA MEMOIRE - SHARED POOL AREA : ZONE DC
+
+select parameter, gets, getmisses from v$rowcache ;
+
+
+select sum (getmisses)*100/sum (gets) "Get Ratio, en %"
+from v$rowcache ;
+
+                      
+
+// OPTIMISATION DE LA MEMOIRE : BUFFER DE DONNEES
+
+desc v$sysstat ;
+select * from v$sysstat ;
+
+select name, value from v$sysstat 
+where name in ('physical reads', 'db block gets', 'consistent gets') ;
+       
+
+select (1-(phy.value/ (cur.value+con.value)))*100   "Cache Hit ratio, en %"
+from  v$sysstat phy, v$sysstat cur, v$sysstat con
+where phy.name='physical reads' and cur.name='db block gets' and con.name='consistent gets';
+
+
+
+// OPTIMISATION DE LA MEMOIRE : BUFFER DE REPRISE
+
+select name, value from v$sysstat where name in ('redo log space requests', 'redo entries');
+
+
+select req.value*5000/entries.value "Key Ratio, pour 5000"
+from  v$sysstat req, v$sysstat entries
+where req.name='redo log space requests' and entries.name='redo entries';
+

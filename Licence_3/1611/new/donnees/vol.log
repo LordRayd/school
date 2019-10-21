@@ -1,0 +1,63 @@
+
+SQL*Loader: Release 12.1.0.2.0 - Production on Mar. Févr. 5 14:53:43 2019
+
+Copyright (c) 1982, 2014, Oracle and/or its affiliates.  All rights reserved.
+
+Fichier de contrôle :   vol.ctl
+Fichier de données :      vol.don
+  Fichier des enregistrements refusés :     vol.bad
+  Fichier de rebut :  aucune spécification
+
+ (Allouer tous les rebuts)
+
+Nombre à charger : ALL
+Nombre à ignorer : 0
+Erreurs autorisés : 50
+Tableau de variables :     64 lignes, maximum de 256000 octets
+Continuation :    aucune spécification
+Chemin utilisé:      Classique
+
+Table VOL, chargé à partir de chaque enregistrement physique.
+Option d'insertion en vigueur pour cette table : APPEND
+option TRAILING NULLCOLS effective
+
+   Nom de colonne                  Position   Long  Type de données encadr.
+------------------------------ ---------- ----- ---- ---- ---------------------
+IDVOL                               FIRST     *   ,  O(") CHARACTER            
+VILLEDEPART                          NEXT     *   ,  O(") CHARACTER            
+VILLEARRIVEE                         NEXT     *   ,  O(") CHARACTER            
+HEUREDEPART                          NEXT     *   ,  O(") CHARACTER            
+HEUREARRIVEE                         NEXT     *   ,  O(") CHARACTER            
+JOUR                                 NEXT     *   ,  O(") CHARACTER            
+DECALAGE                             NEXT     *   ,  O(") CHARACTER            
+
+Enregistrement 3 : Rejeté - Erreur sur table VOL.
+ORA-02290: violation de contraintes (E1604902.VOLHEUREDEP0_24) de vérification
+
+Enregistrement 7 : Rejeté - Erreur sur table VOL.
+ORA-02290: violation de contraintes (E1604902.VOLJOURDECAL) de vérification
+
+Enregistrement 10 : Rejeté - Erreur sur table VOL.
+ORA-00001: violation de contrainte unique (E1604902.VOLCLEPRIM)
+
+
+Table VOL :
+  9 Lignes - Chargement terminé.
+  3 Lignes chargement impossible dû à des erreurs de données.
+  0 Lignes chargement impossible car échec de toutes les clauses WHEN.
+  0 Lignes chargement impossible car tous les champs étaient non renseignés.
+
+
+Espace affecté au tableau de variables :                 115584 octets(64 lignes)
+Octets de tampon de lecture : 1048576
+
+Nombre total d'enregistrements logiques ignorés :          0
+Nombre total d'enregistrements logiques lus :            12
+Nombre total d'enregistrements logiques rejetés :         3
+Nombre total d'enregistrements logiques mis au rebut :        0
+
+Le début de l'exécution a été effectué sur Mar. Févr. 05 14:53:43 2019
+La fin de l'exécution a été effectuée sur Mar. Févr. 05 14:53:49 2019
+
+Temps écoulé (ELAPSED) :     00:00:06.65
+Temps processeur (CPU) :    00:00:00.03

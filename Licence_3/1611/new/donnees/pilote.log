@@ -1,0 +1,51 @@
+
+SQL*Loader: Release 12.1.0.2.0 - Production on Mar. Févr. 5 14:53:56 2019
+
+Copyright (c) 1982, 2014, Oracle and/or its affiliates.  All rights reserved.
+
+Fichier de contrôle :   pilote.ctl
+Fichier de données :      pilote.don
+  Fichier des enregistrements refusés :     pilote.bad
+  Fichier de rebut :  aucune spécification
+
+ (Allouer tous les rebuts)
+
+Nombre à charger : ALL
+Nombre à ignorer : 0
+Erreurs autorisés : 50
+Tableau de variables :     64 lignes, maximum de 256000 octets
+Continuation :    aucune spécification
+Chemin utilisé:      Classique
+
+Table PILOTE, chargé à partir de chaque enregistrement physique.
+Option d'insertion en vigueur pour cette table : APPEND
+
+   Nom de colonne                  Position   Long  Type de données encadr.
+------------------------------ ---------- ----- ---- ---- ---------------------
+IDPILOTE                              1:4     4           CHARACTER            
+NOMPILOTE                            5:17    13           CHARACTER            
+ADRPILOTE                           18:33    16           CHARACTER            
+SALAIREPILOTE                       34:43    10           CHARACTER            
+EMBAUCHEPILOTE                      46:55    10           CHARACTER            
+
+
+Table PILOTE :
+  7 Lignes - Chargement terminé.
+  0 Lignes chargement impossible dû à des erreurs de données.
+  0 Lignes chargement impossible car échec de toutes les clauses WHEN.
+  0 Lignes chargement impossible car tous les champs étaient non renseignés.
+
+
+Espace affecté au tableau de variables :                   4096 octets(64 lignes)
+Octets de tampon de lecture : 1048576
+
+Nombre total d'enregistrements logiques ignorés :          0
+Nombre total d'enregistrements logiques lus :             7
+Nombre total d'enregistrements logiques rejetés :         0
+Nombre total d'enregistrements logiques mis au rebut :        0
+
+Le début de l'exécution a été effectué sur Mar. Févr. 05 14:53:56 2019
+La fin de l'exécution a été effectuée sur Mar. Févr. 05 14:54:03 2019
+
+Temps écoulé (ELAPSED) :     00:00:07.00
+Temps processeur (CPU) :    00:00:00.03

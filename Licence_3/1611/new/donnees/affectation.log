@@ -1,0 +1,66 @@
+
+SQL*Loader: Release 12.1.0.2.0 - Production on Mar. Févr. 5 15:30:57 2019
+
+Copyright (c) 1982, 2014, Oracle and/or its affiliates.  All rights reserved.
+
+Fichier de contrôle :   affectation.ctl
+Fichier de données :      affectation.don
+  Fichier des enregistrements refusés :     affectation.bad
+  Fichier de rebut :  aucune spécification
+
+ (Allouer tous les rebuts)
+
+Nombre à charger : ALL
+Nombre à ignorer : 0
+Erreurs autorisés : 50
+Tableau de variables :     64 lignes, maximum de 256000 octets
+Continuation :    aucune spécification
+Chemin utilisé:      Classique
+
+Table AFFECTATION, chargé à partir de chaque enregistrement physique.
+Option d'insertion en vigueur pour cette table : APPEND
+option TRAILING NULLCOLS effective
+
+   Nom de colonne                  Position   Long  Type de données encadr.
+------------------------------ ---------- ----- ---- ---- ---------------------
+IDVOL                               FIRST     *   ,  O(") CHARACTER            
+DATEVOL                              NEXT     *   ,  O(") CHARACTER            
+IDPILOTE                             NEXT     *   ,  O(") CHARACTER            
+IDAVION                              NEXT     *   ,  O(") CHARACTER            
+NBPASSAGERS                          NEXT     *   ,  O(") CHARACTER            
+
+Enregistrement 2 : Rejeté - Erreur sur table AFFECTATION.
+ORA-01403: aucune donnée trouvée
+ORA-06512: à "E1604902.T_AVIONPASSAGER", ligne 4
+ORA-04088: erreur lors d'exécution du déclencheur 'E1604902.T_AVIONPASSAGER'
+
+Enregistrement 6 : Rejeté - Erreur sur table AFFECTATION.
+ORA-02291: violation de contrainte d'intégrité (E1604902.AFFECTATIONCLEETRANGIDVOL) - clé parent introuvable
+
+Enregistrement 8 : Rejeté - Erreur sur table AFFECTATION.
+ORA-00001: violation de contrainte unique (E1604902.AFFECTATIONCLEPRIM)
+
+Enregistrement 10 : Rejeté - Erreur sur table AFFECTATION.
+ORA-02291: violation de contrainte d'intégrité (E1604902.AFFECTATIONCLEETRANGIDPILOTE) - clé parent introuvable
+
+
+Table AFFECTATION :
+  7 Lignes - Chargement terminé.
+  4 Lignes chargement impossible dû à des erreurs de données.
+  0 Lignes chargement impossible car échec de toutes les clauses WHEN.
+  0 Lignes chargement impossible car tous les champs étaient non renseignés.
+
+
+Espace affecté au tableau de variables :                  82560 octets(64 lignes)
+Octets de tampon de lecture : 1048576
+
+Nombre total d'enregistrements logiques ignorés :          0
+Nombre total d'enregistrements logiques lus :            11
+Nombre total d'enregistrements logiques rejetés :         4
+Nombre total d'enregistrements logiques mis au rebut :        0
+
+Le début de l'exécution a été effectué sur Mar. Févr. 05 15:30:57 2019
+La fin de l'exécution a été effectuée sur Mar. Févr. 05 15:31:03 2019
+
+Temps écoulé (ELAPSED) :     00:00:05.66
+Temps processeur (CPU) :    00:00:00.04

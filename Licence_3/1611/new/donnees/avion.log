@@ -1,0 +1,56 @@
+
+SQL*Loader: Release 12.1.0.2.0 - Production on Mar. Févr. 5 14:56:14 2019
+
+Copyright (c) 1982, 2014, Oracle and/or its affiliates.  All rights reserved.
+
+Fichier de contrôle :   avion.ctl
+Fichier de données :      avion.don
+  Fichier des enregistrements refusés :     avion.bad
+  Fichier de rebut :  aucune spécification
+
+ (Allouer tous les rebuts)
+
+Nombre à charger : ALL
+Nombre à ignorer : 0
+Erreurs autorisés : 50
+Tableau de variables :     64 lignes, maximum de 256000 octets
+Continuation :    aucune spécification
+Chemin utilisé:      Classique
+
+Table AVION, chargé à partir de chaque enregistrement physique.
+Option d'insertion en vigueur pour cette table : APPEND
+option TRAILING NULLCOLS effective
+
+   Nom de colonne                  Position   Long  Type de données encadr.
+------------------------------ ---------- ----- ---- ---- ---------------------
+IDAVION                             FIRST     *   ,  O(") CHARACTER            
+TYPEAPPAREIL                         NEXT     *   ,  O(") CHARACTER            
+MISEENSERVICE                        NEXT     *   ,  O(") CHARACTER            
+
+Enregistrement 1 : Rejeté - Erreur sur table AVION.
+ORA-02291: violation de contrainte d'intégrité (E1604902.AVIONCLEETRANGTYPEAPPAREIL) - clé parent introuvable
+
+Enregistrement 8 : Rejeté - Erreur sur table AVION, colonne TYPEAPPAREIL.
+ORA-12899: valeur trop grande pour la colonne "E1604902"."AVION"."TYPEAPPAREIL" (réelle : 4, maximum : 3)
+
+
+Table AVION :
+  6 Lignes - Chargement terminé.
+  2 Lignes chargement impossible dû à des erreurs de données.
+  0 Lignes chargement impossible car échec de toutes les clauses WHEN.
+  0 Lignes chargement impossible car tous les champs étaient non renseignés.
+
+
+Espace affecté au tableau de variables :                  49536 octets(64 lignes)
+Octets de tampon de lecture : 1048576
+
+Nombre total d'enregistrements logiques ignorés :          0
+Nombre total d'enregistrements logiques lus :             8
+Nombre total d'enregistrements logiques rejetés :         2
+Nombre total d'enregistrements logiques mis au rebut :        0
+
+Le début de l'exécution a été effectué sur Mar. Févr. 05 14:56:14 2019
+La fin de l'exécution a été effectuée sur Mar. Févr. 05 14:56:21 2019
+
+Temps écoulé (ELAPSED) :     00:00:06.82
+Temps processeur (CPU) :    00:00:00.04

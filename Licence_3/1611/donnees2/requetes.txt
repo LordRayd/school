@@ -1,0 +1,92 @@
+Partie 1 - Question 2
+
+*** Espace de stockage par tablespace : vue DBA_DATA_FILES***
+
+select tablespace_name, sum (bytes/1024) "espace total (Ko)" , sum(blocks) "espace total (blocs)"
+from dba_data_files 
+group by tablespace_name ;
+
+
+*** Espace libre par tablespace : vue DBA_FREE_SPACE ***
+                                                            
+select block_id, blocks
+from dba_free_space 
+where tablespace_name = 'ETUDIANTS' 
+order by block_id ;
+
+
+select tablespace_name, sum (bytes/1024) "espace libre (Ko)", sum (blocks) "espace libre (blocs)"
+from dba_free_space 
+group by tablespace_name ;
+
+
+
+*** Taux d’occupation de chaque tablespace ***
+
+select A.tablespace_name, A.total, B.libre, ((A.total-B.libre)*100/A.total) "taux occupation (%)"
+from
+(select tablespace_name, sum (bytes) total from dba_data_files group by tablespace_name) A,
+(select tablespace_name, sum (bytes) libre from dba_free_space group by tablespace_name) B
+where A.tablespace_name = B. tablespace_name ;
+
+Partie 1 - Question 3
+
+*** Nombre de segments du TS ETUDIANTS ***
+
+select count (*) from DBA_SEGMENTS where tablespace_name='ETUDIANTS' ;
+
+*** Nombre d'extensions du TS ETUDIANTS ***
+
+select sum(EXTENTS)  from DBA_SEGMENTS where tablespace_name='ETUDIANTS' ;
+
+*** Nombre d'extensions par segment dans le TS ETUDIANTS ***
+
+select A.nbSegments, B.nbExtensions, (B.nbExtensions/A.nbSegments) "nbMoyenExtParSeg"
+from
+(select count (*) nbSegments from DBA_SEGMENTS where tablespace_name='ETUDIANTS') A,
+(select sum(EXTENTS) nbExtensions  from DBA_SEGMENTS where tablespace_name='ETUDIANTS') B ;
+
+
+Partie 2 - Question 1
+
+
+- en utilisant les vues DBA_
+
+select o.object_name, o.object_type, s.segment_type
+from 
+(select object_name, object_type 
+from dba_objects
+where owner='RAPHALEN') o,
+(select segment_name, segment_type
+from dba_segments
+where owner='RAPHALEN') s
+where o.object_name=s.segment_name (+);
+
+
+*****************************************************************************
+
+Quelques requêtes qui vous seront utiles  pour l’examen d’un segment spécifique …
+
+select *
+from dba_segments
+where owner='???' and segment_name='???';
+
+select extent_id, block_id, blocks 
+from dba_extents
+where owner='???' and segment_name='???'
+order by extent_id;
+
+select *
+from dba_tables
+where owner='???' and table_name='???';
+
+analyze table test compute statistics ;
+
+select num_rows, blocks, empty_blocks, avg_space, chain_cnt, avg_row_len
+from dba_tables 
+where owner='???' and table_name='???' ;
+
+
+
+
+
