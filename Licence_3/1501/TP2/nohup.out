@@ -1,0 +1,4 @@
+
+(geany:13385): Gtk-WARNING **: Allocating size to GtkScrollbar 0x2995240 without calling gtk_widget_get_preferred_width/height(). How does the code know the size to allocate?
+
+(geany:13385): Gtk-WARNING **: Allocating size to GtkScrollbar 0x2995240 without calling gtk_widget_get_preferred_width/height(). How does the code know the size to allocate?
