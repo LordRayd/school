@@ -1,0 +1,8 @@
+zero padding convcolution :
+    entourer la matrice de depart de 2 lignes et colonnes de chaque cotés de 0
+
+padding repetition :
+    entourer la matrice de depart de 2 lignes et colonnes de chaque cotés en repetant la matrice par symétrie
+
+un stride est un deplacement :
+    si on fait un stride de 2 on decale la matrice de 2 cases sur le coté
